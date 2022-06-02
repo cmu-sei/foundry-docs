@@ -1,1 +1,1 @@
-Foundry Appliance Docs
+# Foundry Appliance Docs
