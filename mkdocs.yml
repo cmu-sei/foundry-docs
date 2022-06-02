@@ -1,6 +1,8 @@
 site_name: Foundry Docs
 theme:
   name: material
+  features:
+    - navigation.tabs
 copyright: Copyright &copy; 2022 Carnegie Mellon University
 extra:
   social:
