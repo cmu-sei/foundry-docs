@@ -3,6 +3,10 @@ theme:
   name: material
   features:
     - navigation.tabs
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 copyright: Copyright &copy; 2022 Carnegie Mellon University
 extra:
   social:
