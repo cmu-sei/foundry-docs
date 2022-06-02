@@ -1,1 +1,4 @@
 site_name: Foundry Docs
+theme:
+  name: material
+
