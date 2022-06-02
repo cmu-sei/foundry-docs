@@ -1,4 +1,14 @@
 site_name: Foundry Docs
 theme:
   name: material
-
+copyright: Copyright &copy; 2022 Carnegie Mellon University
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cmu-sei
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/cmusei
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sei_cmu
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/software-engineering-institute/
