@@ -41,7 +41,7 @@ To approve a requested display name, click **names-pending**. That gives you a l
 
 In the screen capture below, Tom Bombadil is requesting a name change to "Treebeard."
 
-![gb-admin-pending](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-pending.png)
+![gb-admin-pending](img/gb-admin-pending.png)
 
 If *approved*, the name moves from the **names-pending** list. From the player's point of view, the *requested* display name becomes the display name.
 
@@ -53,7 +53,7 @@ This is where admins define who the sponsors are and what image to associate wit
 
 In the screen capture below, **moria** is the image key (from the file name) and "Doors of Durin" is the title. There is no save after attaching an image or updating the title.
 
-![moria](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-moria.png)
+![moria](img/gb-admin-moria.png)
 
 Click **Delete** then **Confirm** to remove an image and title from the sponsor list.
 
@@ -107,11 +107,11 @@ Select a gameboard from the dropdown. You have two export to CSV options:
 
 The screen capture below shows two challenges on a gameboard in the **Challenge Stats** view.
 
-![gb-admin-challenge-stats](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-challenge-stats.png)
+![gb-admin-challenge-stats](img/gb-admin-challenge-stats.png)
 
  In the **Challenge** column, select a challenge to view the **Challenge Details**. The challenge *Analyze This!* is seen in the Challenge Details view below.
 
-![gb-admin-challenge-details](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-challenge-details.png)
+![gb-admin-challenge-details](img/gb-admin-challenge-details.png)
 
 ### Feedback Reports
 
