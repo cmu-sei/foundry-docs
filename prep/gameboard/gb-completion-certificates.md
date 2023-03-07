@@ -2,7 +2,7 @@
 
 Gameboard supports a convenient way for participants to view and print a certificate as proof that they participated in a game. Certificates are unique to the participant and specific to a game.
 
-To create a *certificate template*, you must have the *Administrator* role in the Gameboard. For more information about roles, please see the [Gameboard Roles Guide](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\gameboard-docs).
+To create a *certificate template*, you must have the *Administrator* role in the Gameboard. For more information about roles, please see the [Gameboard Roles Guide](gb-roles.md).
 
 To generate and print a *certificate* of completion, you must be a participant in a game that is completed and the scoreboard is final.
 
