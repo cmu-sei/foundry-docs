@@ -87,7 +87,9 @@ Here is where the visual representation of the game is arranged.  Challenges are
 2. Under Map, click **Search**. 
 3. In the Search field, enter your challenge search term. 
 4. In the results, select the challenge or challenges. The Edit icon tells you how many challenges you have selected.
-   ![gb-map-edit](img/gb-map-edit.png)
+   
+![gb-map-edit](img/gb-map-edit.png)
+
 5. Select **Edit**, enter **Support Keys** and assign **Points**. 
 6. Select **Map**.  The challenges you selected appear as hotspots on the map. Drag them into position on the map.
 
