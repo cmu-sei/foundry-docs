@@ -29,7 +29,7 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 **Lobby Markdown:** Using Markdown enter any information you would like players to see when they enter the game lobby. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
 
-**Feedback Questions:** It's possible---but not required---to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](gb-feedback-form.md).
+**Feedback Questions:** It's possible---but not required---to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](gb-admin-feedback-form.md).
 
 **Card Image:** Upload an image to become game tile or card to identify your game in the lobby. This can 
 
@@ -87,9 +87,7 @@ Here is where the visual representation of the game is arranged.  Challenges are
 2. Under Map, click **Search**. 
 3. In the Search field, enter your challenge search term. 
 4. In the results, select the challenge or challenges. The Edit icon tells you how many challenges you have selected.
-   
-![gb-map-edit](img/gb-map-edit.png)
-
+   ![gb-map-edit](img/gb-map-edit.png)
 5. Select **Edit**, enter **Support Keys** and assign **Points**. 
 6. Select **Map**.  The challenges you selected appear as hotspots on the map. Drag them into position on the map.
 
