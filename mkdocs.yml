@@ -3,6 +3,19 @@ theme:
   name: material
   features:
     - navigation.tabs
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: lime
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 markdown_extensions:
   - admonition
   - pymdownx.details
