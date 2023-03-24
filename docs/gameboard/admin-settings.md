@@ -11,13 +11,15 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 **Publish:** Toggle *Hidden* or *Visible* to make the game visible to players on the Home screen.
 
-> When a game is hidden, a user with permissions that can view both hidden and visible games---such as Designer or Tester---will see the game card on the Home screen; however, the game card appears with an "eye-slash" icon to denote that it is hidden. 
+!!! info
+   
+    When a game is hidden, a user with permissions that can view both hidden and visible games -- such as Designer or Tester -- will see the game card on the Home screen; however, the game card appears with an "eye-slash" icon to denote that it is hidden.
 
 **Key:** A short, unique key distinguishing *this* event.
 
 **Name:** The title of your game. Displayed in the game lobby and on the scoreboard.
 
-**Series:** The name of the series; perhaps the same event is run annually making it a _series_.
+**Series:** The name of the series; perhaps the same event is run annually making it a *series*.
 
 **Track:** A course of action in your event. An event may have different categories for teams and individuals to compete in or an event may have an offensive skills track and defensive skills track.
 
@@ -29,7 +31,7 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 **Lobby Markdown:** Using Markdown enter any information you would like players to see when they enter the game lobby. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
 
-**Feedback Questions:** It's possible---but not required---to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](gb-admin-feedback-form.md).
+**Feedback Questions:** It's possible -- but not required -- to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](admin-feedback-form.md).
 
 **Card Image:** Upload an image to become game tile or card to identify your game in the lobby. This can 
 
@@ -73,7 +75,7 @@ Offering a different execution period from registration period is an option. Thi
 
 **Team Size:** This is self-explanatory. A matching *minimum* and *maximum* of one means that the challenge is a single player challenge. That is, a "team" of one. In a true team tournament, two or more would probably be the minimum. 
 
-**Team Sponsorship:** Toggle *Open* or *Required*.  When required, members on a team must have the same sponsor. Team sponsors are chosen during enrollment. For more information on sponsors, see [Gameboard Administration](gb-admin.md).
+**Team Sponsorship:** Toggle *Open* or *Required*.  When required, members on a team must have the same sponsor. Team sponsors are chosen during enrollment. For more information on sponsors, see [Gameboard Administration](admin.md).
 
 **Registration Markdown:** Using Markdown enter any information you would like players to see when they register for the game. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
 
@@ -81,21 +83,24 @@ Offering a different execution period from registration period is an option. Thi
 
 Here is where the visual representation of the game is arranged.  Challenges are searched for and placed on the game map here. To build a game map:
 
-> Assuming that you have a correctly deployed instance of TopoMojo and have logged into gameboard with the appropriate role.
+!!! warning
+
+      Assuming that you have a correctly deployed instance of TopoMojo and have logged into Gameboard with the appropriate role.
 
 1. Click **Admin**, hover over a game card, then click **Settings**.
-2. Under Map, click **Search**. 
-3. In the Search field, enter your challenge search term. 
-4. In the results, select the challenge or challenges. The Edit icon tells you how many challenges you have selected.
-   ![gb-map-edit](img/gb-map-edit.png)
-5. Select **Edit**, enter **Support Keys** and assign **Points**. 
+2. Under Map, click **Search**.
+3. In the Search field, enter your challenge search term.
+4. In the results, select the challenge or challenges.
+5. Select **Edit**, enter **Support Keys** and assign **Points**.
 6. Select **Map**.  The challenges you selected appear as hotspots on the map. Drag them into position on the map.
+
+*The Edit icon tells you how many challenges you have selected.*
+
+![map-edit](img/map-edit.png)
 
 ### Search
 
-Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo. 
-
-For more information on how Audience works with the gameboard, see [Linking a TopoMojo VM to the Gameboard](gb-tm-linking-topo-vm-to-gameboard.md). 
+Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo.
 
 Selecting a challenge from the search results adds it to the Edit icon.
 
@@ -105,9 +110,9 @@ Selecting a challenge from the search results adds it to the Edit icon.
 
 **Disabled:** Check to disable this challenge in the game without deleting it.
 
-**Sync with Source:** Synchronizes the gameboard challenge markdown guide with the TopoMojo challenge markdown guide so that the content is the same in both apps.
+**Sync with Source:** Synchronizes the Gameboard challenge markdown guide with the TopoMojo challenge markdown guide so that the content is the same in both apps.
 
-**Support Key:** Assign a unique "key" here that gets appended to a TopoMojo gamespace id to help troubleshoot problems during competition. For example: `b28c7911 a03` --- **b28c7911** is the uniquely generated gamespace ID from TopoMojo; **a03** is the support key *manually* assigned here to a challenge. For more information on support keys, see [Gameboard Administration](gb-admin.md).
+**Support Key:** Assign a unique "key" here that gets appended to a TopoMojo gamespace id to help troubleshoot problems during competition. For example: `b28c7911 a03` --- **b28c7911** is the uniquely generated gamespace ID from TopoMojo; **a03** is the support key *manually* assigned here to a challenge. For more information on support keys, see [Gameboard Administration](admin.md).
 
 **Points:** Assign a point value to your challenge here.
 

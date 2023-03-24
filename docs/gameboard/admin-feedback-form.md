@@ -1,8 +1,8 @@
 # Feedback Feature
 
-In the gameboard application, it is possible to create feedback forms to capture participant feedback on the game and individual challenges. Collecting and analyzing participant feedback can help you refine and improve your games and challenges.
+In the Gameboard application, it is possible to create feedback forms to capture participant feedback on the game and individual challenges. Collecting and analyzing participant feedback can help you refine and improve your games and challenges.
 
-To create a feedback form, you must have the *Administrator* role in the Gameboard. For more information about roles, please see the [Gameboard Roles Guide](gb-roles.md).
+To create a feedback form, you must have the *Administrator* role in the Gameboard. For more information about roles, please see the [Gameboard Roles Guide](admin-roles.md).
 
 Creating a feedback form is not required to build a game or challenge. It is up to you whether or not you choose to implement it. If feedback is not configured in the gameboard administration section, then the feedback form does not appear for the participant. You can create questions for *just* a game, *just* challenges, or *both* game and challenges. See the "Configuration YAML" sections below for additional detail.
 
@@ -26,7 +26,9 @@ Scroll down to the **Feedback Questions** sections. If this is blank, then you w
 - defaults have been established and a new game is created
 - a game is cloned where original game contained save YAML
 
-> When cloning a game, the feedback YAML will always be copied *exactly* from the original game, even if the game's feedback YAML is blank. In this instance, the default template is never used. 
+!!! note
+
+    When cloning a game, the feedback YAML will always be copied *exactly* from the original game, even if the game's feedback YAML is blank. In this instance, the default template is never used. 
 
 If your questions are built correctly, you will see a message confirming this:
 
@@ -163,7 +165,9 @@ Completing a challenge is not a requirement for submitting challenge feedback. P
 
 Only feedback that has been submitted can be viewed in the reports. Once feedback has been submitted, a participant cannot go back and edit their feedback.
 
-> **Note on submitted vs in progress:** "In progress" feedback is feedback a participant has begun in some capacity that triggered the autosave feature at least once but they have not clicked the **Submit** button yet. "In progress" feedback (i.e., *autosaved* feedback) and "submitted" feedback are both stored in the database; however, only submitted feedback is queried for the reports. 
+??? note "Note on submitted vs in progress"
+
+    "In progress" feedback is feedback a participant has begun in some capacity that triggered the autosave feature at least once but they have not clicked the **Submit** button yet. "In progress" feedback (i.e., *autosaved* feedback) and "submitted" feedback are both stored in the database; however, only submitted feedback is queried for the reports. 
 
 This documentation assumes that you you are logged into a game and successfully enrolled. To view the *game* feedback as a participant:
 
@@ -177,6 +181,6 @@ Select a game tile then click **Start**, then **Confirm** to start the session. 
 
 Expand the **Challenge Feedback** form and complete the survey. Click **Submit**, then **Confirm** when finished. Responses can't be edited after clicking **Submit**. Challenge feedback responses do autosave. 
 
-Whether or not the feedback form is expanded or collapsed depends upon the status of the game or the challenge. If a game is active, then participants will manually expand the feedback form. If a game is complete, the feedback form is automatically expanded. 
+Whether or not the feedback form is expanded or collapsed depends upon the status of the game or the challenge. If a game is active, then participants will manually expand the feedback form. If a game is complete, the feedback form is automatically expanded.
 
 The same is true of challenge feedback. If participants are actively working a challenge, they will manually expand the feedback form. When participants complete a challenge, the challenge feedback form expands automatically (and collapses when submitted). The feedback form section can be expanded or collapsed at any time once the session has started.
