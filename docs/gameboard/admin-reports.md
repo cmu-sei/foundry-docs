@@ -28,15 +28,15 @@ Select a gameboard from the dropdown. You have two export to CSV options:
 
 The screen capture below shows two challenges on a gameboard in the **Challenge Stats** view.
 
-![gb-admin-challenge-stats](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-challenge-stats.png)
+![admin-challenge-stats](img/admin-challenge-stats.png)
 
  In the **Challenge** column, select a challenge to view the **Challenge Details**. The challenge *Analyze This!* is seen in the Challenge Details view below.
 
-![gb-admin-challenge-details](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-challenge-details.png)
+![admin-challenge-details](img/admin-challenge-details.png)
 
 ## Feedback Reports
 
-Feedback reports contain player responses to surveys created by game administrators. Feedback functionality --- including Feedback Reports --- is documented in the [Feedback Feature](\gb-feedback-form.md) guide.
+Feedback reports contain player responses to surveys created by game administrators. Feedback functionality -- including Feedback Reports -- is documented in the [Feedback Feature](admin-feedback-form.md) guide.
 
 ## Support Reports
 

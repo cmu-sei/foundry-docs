@@ -16,7 +16,9 @@ Expand **Certificate** to view and print the certificate as a .PDF. The options 
 
 Players can view a list of past certificates from their gameboard Profile page too. In gameboard, click **Profile**. Then click **Certificates**.  A table view of all game certificates is displayed. You can view and print the certificate as a .PDF from the table view.
 
-> Certificates are not available during live games.
+!!! info
+
+        Certificates are not available during live games.
 
 ## Configuring certificates as an administrator
 

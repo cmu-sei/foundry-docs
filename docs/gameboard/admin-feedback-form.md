@@ -159,7 +159,7 @@ To view *challenge* feedback, toggle **Challenge Feedback**, then select a game 
 
 ## Participant View
 
-Participants are only permitted **one** submission per game and per challenge. Thus, every member of a team is permitted to provide individual feedback. However, the feedback form is available at any time after session is started. This way, if participants quit the game before time expires they still have the opportunity to submit feedback.   
+Participants are only permitted **one** submission per game and per challenge. Thus, every member of a team is permitted to provide individual feedback. However, the feedback form is available at any time after session is started. This way, if participants quit the game before time expires they still have the opportunity to submit feedback.
 
 Completing a challenge is not a requirement for submitting challenge feedback. Participants are able to begin a challenge, go through it, not make any submissions and still provide feedback. Perhaps the challenge was either too difficult for them or they just went down the wrong path. Either way, their feedback is valuable.
 

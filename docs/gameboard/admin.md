@@ -57,7 +57,7 @@ This is where admins define who the sponsors are and what image to associate wit
 
 In the screen capture below, **moria** is the image key (from the file name) and "Doors of Durin" is the title. There is no save after attaching an image or updating the title.
 
-![moria](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-moria.png)
+![moria](img/admin-moria.png)
 
 Click **Delete** then **Confirm** to remove an image and title from the sponsor list.
 
@@ -83,4 +83,4 @@ Clicking **Regrade** has the gameboard check all submissions by a player against
 
 ## Reports
 
-See [Admin Reports](/gb.admin-reports.md).
+See [Admin Reports](admin-reports.md).

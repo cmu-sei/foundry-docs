@@ -18,7 +18,7 @@ Selecting the four-square icon allows you to view the consoles of another player
 
 VM name (*win10-workstation*) and player display name (*Wolverine 3*)  help observers identify the console they are viewing, especially if there are many players with many challenges. Click the **pop-out** icon to open the console in a new browser tab.
 
-![gb-observe-pop-out](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-observe-pop-out.png)
+![observe-pop-out](img/observe-pop-out.png)
 
 **Name:** Sort the consoles alphabetically by the Team/Player and then by challenge name.
 
@@ -26,7 +26,7 @@ VM name (*win10-workstation*) and player display name (*Wolverine 3*)  help obse
 
 You can move a row to the top and "pin" it there to keep it in place. You can pin multiple rows at the top as well. This is useful when you are interested in following a certain few teams, players, or challenges. This also useful after you have searched---you can pin results at the top where you can reference them frequently.
 
-![gb-observe-pin](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-observe-pin.png)
+![observe-pin](img/observe-pin.png)
 
 ## Observe Players
 
