@@ -20,7 +20,11 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-copyright: Copyright &copy; 2022 Carnegie Mellon University
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+copyright: Copyright &copy; 2023 Carnegie Mellon University
 extra:
   social:
     - icon: fontawesome/brands/github
