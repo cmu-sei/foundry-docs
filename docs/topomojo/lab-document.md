@@ -18,8 +18,8 @@ To insert an image into your document:
 
 To see how your instructions will look to players when they "play" your lab, click the **Preview** button. The first screen capture shows the Markdown editor. The second screen capture shows the document in preview mode. 
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-markdown-editor.png" alt="tm-markdown-editor" style="zoom:50%;" />
+![markdown-editor](img/markdown-editor.png)
 
 and
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-markdown-preview.png" alt="tm-markdown-preview" style="zoom:50%;" />
+![markdown-preview](img/markdown-preview.png)

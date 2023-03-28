@@ -34,10 +34,9 @@ To add a template to your workspace:
 2.	Search for and add the templates you need for your topology. 
 3.	Click the **edit** icon to expand the template(s) to make changes. 
 
-<img src="/img/tm-templates-edit.png" alt="tm-templates-edit" style="zoom: 67%;" />
+![templates-edit](img/templates-edit.png)
 
 The table below explains the fields in the VM template.
-
 
 | Field           | Action or description                                        |
 | --------------- | ------------------------------------------------------------ |
@@ -54,7 +53,7 @@ The table below explains the fields in the VM template.
 
 ### Refresh and Deploy
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-refresh-deploy.png" alt="tm-refresh-deploy" style="zoom: 67%;" />
+![refresh-deploy](img/refresh-deploy.png)
 
 Once the template is in the appropriate state:
 
@@ -63,7 +62,7 @@ Once the template is in the appropriate state:
 
 From left to right, the following additional icons are used in the deployed virtual machine:
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-other-icons.png" alt="tm-other-icons" style="zoom: 67%;" />
+![other-icons](img/other-icons.png)
 
 - **Console:** Opens the console for the virtual machine.
 - **Stop/Start:** Power off/on the VM, but leaves the resource deployed on the hypervisor. Clicking **stop** results in the hypervisor showing a deployed VM in a powered off state.  Clicking **start** powers on the deployed VM. 
@@ -72,6 +71,6 @@ From left to right, the following additional icons are used in the deployed virt
 
 ### Save
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-templates-save.png" alt="tm-templates-save" style="zoom:67%;" />
+![templates-save](img/templates-save.png)
 
 The **save** icon appears only when an unlinked disk is being used; changes can't be saved to a linked disk. The **save** icon removes the last disk snapshot and creates a new snapshot that saves all changes made to the VM.

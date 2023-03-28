@@ -7,8 +7,7 @@ The procedures below show you how to:
 
 _The VM console cog icon:_
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-console-cog.png" alt="tm-console-cog" style="zoom:67%;" />
-
+![console-cog](img/console-cog.png)
 
 ## From local ("out-of-game") to in-game  
 
@@ -17,13 +16,13 @@ _The VM console cog icon:_
 3. In the VM, select where you want the copied text to go (this can be a new file or an open application, etc.).
 4. Under **Clipboard**, click **Paste**. This inserts the copied content into the virtual machine.
 
-<img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-console-paste.png" alt="tm-console-paste" style="zoom:50%;" />
-
+![console-paste](img/console-paste.png)
 
 ## From in-game to out of game
 
 1. On the VM: select the content you would like to copy. Copy the content *first* to the VM's clipboard (right-click Copy or `ctrl+C`).
 2. Once you've copied your text to the VM clipboard: select the cog icon (the **Tools**), place your cursor in that clipboard and click **Copy**. This transfers the VM clip to your local clipboard.
 
-   <img src="C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\foundry-docs\for tm\img\tm-console-copy.png" alt="tm-console-copy" style="zoom:50%;" />
+   ![console-copy](img/console-copy.png)
+
 3. On your local machine: paste the copied text into an application using right-click Paste or `ctrl+V`.

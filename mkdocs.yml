@@ -1,4 +1,7 @@
-site_name: Foundry Docs
+# Project information
+site_name: Foundry Documentation
+
+# Configuration
 theme:
   name: material
   features:
@@ -21,6 +24,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -29,6 +34,44 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Page tree navigation
+nav:
+- Home: index.md
+- TopoMojo guide:
+  - About TopoMojo: topomojo/index.md
+  - Getting started with TopoMojo: topomojo/getting-started.md
+  - Finding an existing space: topomojo/finding-a-space.md
+  - Building a new space:
+    - Settings and Templates: topomojo/building-a-workspace.md
+    - Document: topomojo/lab-document.md
+    - Challenge: topomojo/challenge.md
+    - Files: topomojo/files.md
+    - Play: topomojo/play.md
+  - Admin features:
+    - Admin Dashboard: topomojo/admin-dashboard.md
+    - Gamespaces: topomojo/admin-dashboard.md
+    - Workspaces: topomojo/admin-workspaces.md
+    - Templates: topomojo/admin-templates.md
+    - Machines: topomojo/admin-machines.md
+    - Users: topomojo/admin-users.md    
+  - Copy and paste: topomojo/copy-paste.md
+- Gameboard guide:
+  - About the Gameboard: gameboard/index.md
+  - Getting started with Gameboard: gameboard/getting-started.md
+  - Using integrated support: gameboard/support.md
+  - Administering games: 
+    - Administration: gameboard/admin.md
+    - Roles: gameboard/admin-roles.md
+    - Reports: gameboard/admin-reports.md
+    - Players: gameboard/admin-players.md
+    - Observe mode: gameboard/admin-observe.md
+    - Settings: gameboard/admin-settings.md
+    - Feedback form: gameboard/admin-feedback-form.md
+    - Completion Certificates: gameboard/completion-certificates.md
+    - Clone, yaml, json, Delete: gameboard/admin-clone-yaml-json.md
+
+# Copyright
 copyright: Copyright &copy; 2023 Carnegie Mellon University
 extra:
   social:
