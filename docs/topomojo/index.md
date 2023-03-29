@@ -1,7 +1,5 @@
 # TopoMojo Docs
 
-# About TopoMojo
-
 TopoMojo is a web application used for creating and delivering cybersecurity training labs and exercises. *Topo* is short for *topology* -- as in a network topology of computer hosts. *Mojo* is the magic of deploying and accessing those resources on demand. With TopoMojo, users can build and deploy labs in a highly-isolated and secure virtual-machine environment. TopoMojo allows for the same functionality and connectivity that users would experience with real, physical devices. Network topologies can utilize not only IP and Ethernet, but also custom protocol solutions, like 802.11 wireless packet simulation. New topologies can be rapidly deployed using existing templates or built from the ground up with user-provided ISO's and VM specifications.
 
 This documentation introduces users to the TopoMojo environment and provides information necessary to launch existing labs and create new topologies.

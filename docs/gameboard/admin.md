@@ -43,7 +43,7 @@ To approve a requested display name, click **names-pending**. That gives you a l
 
 In the screen capture below, Tom Bombadil is requesting a name change to "Treebeard."
 
-![gb-admin-pending](C:\Users\rgreeder\OneDrive - Software Engineering Institute\Desktop\cwd-r documentation\gameboard-v3-docs\img\gb-admin-pending.png)
+![admin-pending](img/admin-pending.png)
 
 If *approved*, the name moves from the **names-pending** list. From the player's point of view, the *requested* display name becomes the display name.
 

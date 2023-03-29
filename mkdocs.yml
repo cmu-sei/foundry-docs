@@ -5,6 +5,7 @@ site_name: Foundry Documentation
 theme:
   name: material
   features:
+    - navigation.footer
     - navigation.tabs
     - navigation.sections
     - toc.integrate

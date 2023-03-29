@@ -45,3 +45,4 @@ The Admin role can:
 - Create, edit, and delete games
 - Manage enrollment and registration
 - Assign and remove roles
+- Awards points manually to a player and team
