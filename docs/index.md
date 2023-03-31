@@ -4,7 +4,7 @@
 
     :construction: This site is under construction. Stay tuned for more updates. :construction:
 
-Welcome to the home of *Foundry Docs*. The documentation describes how to deploy, configure, and use the Foundry application stack developed by the [Software Engineering Institute](www.sei.cmu.edu) (SEI) at [Carnegie Mellon University](www.cmu.edu). The Foundry app stack consists of **Identity**, **TopoMojo**, and **Gameboard**. **Foundry Appliance** is also documented here. Identity plus TopoMojo plus Gameboard equals a full cyber competition and training environment.
+Welcome to the home of *Foundry Docs*. The documentation describes how to deploy, configure, and use the Foundry application stack developed by the [Software Engineering Institute](https://www.sei.cmu.edu) (SEI) at [Carnegie Mellon University](https://www.cmu.edu). The Foundry app stack consists of **Identity**, **TopoMojo**, and **Gameboard**. **Foundry Appliance** is also documented here. Identity plus TopoMojo plus Gameboard equals a full cyber competition and training environment.
 
 ## Identity
 
