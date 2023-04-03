@@ -45,4 +45,15 @@ To award bonus points manually:
 
     You can also get to the Manage Challenge Bonus dialog box by clicking the "triple-dot" context menu and selecting **Manage Challenge Bonuses**.
 
-### Reset Session
+### Unenroll and Reset Session
+
+In the Player view context menu (the "three vertical dots") you'll notice two different menu items: **Unenroll** or **Reset Session**. Which item you see for the player depends on whether the player has started a game session or not. Only users with the `Registrar` or `Admin` roles can unenroll players or reset their sessions.
+
+!!! info
+
+        A "session" is when a game is started and challenges can be deployed and solved.
+
+- **Unenroll**: If a player has registered, but has not started a session, you can *unenroll* them from the game. They will need to re-enroll to play again.
+- **Reset Session:** If a player has registered, and has started playing the game (i.e., they have a game session), you can reset their session. *Reset session* ends their current session and unenrolls them from the game. All record of the session is deleted, including challenge data. If they wish to play again, they'll need to re-enroll and start a new session.
+
+Players can also unenroll themselves from the game lobby or reset their session if the admin setting Allow Reset is set to Allowed for their game. For the player perspective, see: [Participating in a game](participating.md).

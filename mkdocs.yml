@@ -71,6 +71,7 @@ nav:
     - Feedback form: gameboard/admin-feedback-form.md
     - Completion Certificates: gameboard/completion-certificates.md
     - Clone, yaml, json, Delete: gameboard/admin-clone-yaml-json.md
+  - Participating in a game: gameboard/participating.md
 
 # Copyright
 copyright: Copyright &copy; 2023 Carnegie Mellon University

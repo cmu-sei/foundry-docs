@@ -53,7 +53,7 @@ These settings pertain to registration, execution, and general game and challeng
 
 **Session Duration:** The duration of game session in minutes.
 
-**Session Limit:** The maximum number of sessions---a session is when a game is started and challenges can be deployed and solved---per game.
+**Session Limit:** The maximum number of sessions -- a session is when a game is started and challenges can be deployed and solved -- per game.
 
 **Gamespace Limit:** The maximum number of concurrent "gamespaces" allowed. A *gamespace* is the virtual environment that participants use to compete in a challenge. The default value is 0; the value that you enter here is inherited by a newly created board. For example, if you set this value to 5 in the game, any board created will inherit the 5 concurrent gamespace setting. 
 
@@ -62,6 +62,14 @@ These settings pertain to registration, execution, and general game and challeng
 **Allow Preview:** Toggle *Hidden* or *Visible* to allow participants to view a challenge and documentation prior to starting. You may want to prevent too much information from being given away before a challenge start.
 
 **Allow Reset:** Toggle *Forbidden* or *Allowed* to permit participants to restart their game and attempt challenges again. This option is generally allowed on a "practice" game since that game is meant to help users get their bearings on how a competition works; however, you may decide players will be forbidden to reset an "official" game.
+
+**Player Mode:** Toggle to set the game to **Competition** or **Practice**. When at least *one* game is set to Practice in your environment, a link to Practice is visible in the top-right corner of gameboard for authenticated players. Players can click the Practice link and select a challenge start their practice session.
+
+**Require Synchronized Start:** Toggle on to require the game to have a synchronized start. When enabled, no player can start a session until *all* players have indicated that they are "ready to play" in the game lobby. Use this feature for games when you want all players to start at the same time and end at the same time. Synchronized start adheres to other gameboard settings: for example, team size minimum and maximum.
+
+!!! note
+
+    The Admin Start feature bypasses the "ready to play" feature; that is, users assigned the `Admin` role can Admin Start regardless of whether all players have "readied up" or not.
 
 ### Registration
 
