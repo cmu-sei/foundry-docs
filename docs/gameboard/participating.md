@@ -3,7 +3,7 @@
 This topic describes the Gameboard from a participant's point-of-view. A *participant* is a player in a game or a competitor in a competition who has no special role(s) attached them. These instructions assume that a fully configured game environment is available to the reader and they have an account on the Identity server.
 
 1. Browse to the gameboard's designated URL. Some gamecards are visible prior to logging in.
-2. Click **Profile**, then **Login**. You're the Identity server now. Here you can login with an existing account or register for a new one.
+2. Click **Profile**, then **Login**. You're on the Identity server now. Here you can login with an existing account or register for a new one.
 
 !!! danger
 
@@ -41,16 +41,47 @@ If the game is a team game, you organize your team in the game lobby. Under **Se
 
 ## Starting a session
 
-To start your session, click Start Session and click through the confirmation messages.
+To start your session, click **Start Session** and click through the confirmation messages.
 
 !!! warning
     For team players, make sure your teammates are ready to start. You can't add or remove team members after your session has started. Also note that *any* team member can start a session -- the continuous session timer starts when **Start Session** is clicked.  
 
 ## Starting a challenge
 
-## Getting support
+After your session is started, click **Continue to Gameboard**. To start a challenge, click a hot spot on the gameboard. Click **Start Challenge** and click through the confirmation messages.
 
-The challenge Support Code can be found in the lower-right corner of the challenge pane. The Support Code looks similar to this: `a347c5c6`.
+## Getting support in-game
+
+Players can get to the in-game support feature from the launched challenge screen below the challenge questions and the Support link in the top navigation.
+
+From either of these locations, click **Create Ticket**. If you create a ticket from the challenge screen, then the Support Code, challenge information, Game Id,  Player Id, Team Id are automatically generated. If you create a ticket from the Support link, then this information can be added later.
+
+![support corner](img/get-support.png)
+
+*Getting support from a launched challenge*
+
+In the **Summary**, enter a brief statement of the problem.
+
+In the **Description**, enter a more detailed statement of your problem. Include error messages and other pertinent details.
+
+Under **Attachments**, attach files -- especially screen shots -- here.
+
+Click **Submit**.
+
+After submitting the ticket, you can always **add a comment** and attach another file. Updates to a ticket are tracked under Activity. View a status change or an assignment change here.
+
+**Copy to markdown:** Allows you to copy the support ticket information in Markdown format. This is convenient if you need to distribute the ticket's content quickly and easily.
+
+!!! question "What is the Support Code?"
+    The support code is a unique identifier that will help game support staff locate each challenge. The support code for a challenge is automatically added to support tickets linked to challenges. The support code for a challenge can be found below the challenge questions, near the button to create a support ticket. See the screen capture above.
+
+### Finding an existing ticket
+
+From the Support page, use the dropdowns and the **Search** field to locate existing tickets. 
+
+Filter tickets by status: Any, Open, In progress, Not closed (*open* plus *in progress*), and Closed.
+
+Search by entering terms. Search covers ticket summary, labels, challenge titles, and player name.
 
 ## Giving feedback
 

@@ -4,7 +4,7 @@
 
 **Export User or Player Report to CSV:** Allows you to export user or player statistics depending upon which icon you select as a comma-separated values file. From the .csv file, you can perform more detailed analysis.
 
-**Users:** Counts of users *enrolled* in the game and *not enrolled* in the and totals. Not enrolled means registered on the identity server, but not yet enrolled in a game.
+**Users:** Counts of users *enrolled* in the game and *not enrolled* in the game and totals. "Not enrolled" means registered on the identity server, but not yet enrolled in a game.
 
 **Players:** Count of players by games.
 
@@ -20,7 +20,7 @@ Select a gameboard from the dropdown.
 
 ## Challenge Reports
 
-Select a gameboard from the dropdown. You have two export to CSV options:
+Select a gameboard from the dropdown. You have two export-to-CSV options:
 
 **Export Challenge Stats to CSV:** Allows you to export high-level statistics per challenge per game.
 

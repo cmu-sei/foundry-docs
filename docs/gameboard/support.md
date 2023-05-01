@@ -2,7 +2,7 @@
 
 The gameboard platform comes with a built-in customer support interface so that competition hosts and administrators can assist competitors and players. This way, Gameboard is a "one-stop shop" and no outside apps or systems are required to track and measure issues reported by participants.
 
-You must have either Support role or Admin role to use the support feature and manage tickets. Assuming you have been granted the appropriate role in Gameboard, select **Support**.
+You must have either the `Support` role or `Admin` role to use the support feature and manage tickets. Assuming you have been granted the appropriate role in Gameboard, select **Support**.
 
 ## Support from participant point-of-view
 
