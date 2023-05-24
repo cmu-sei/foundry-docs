@@ -8,7 +8,7 @@ Welcome to the home of *Foundry Docs*. The documentation describes how to deploy
 
 ## Identity
 
-Identity manages authentication with OpenID Connect (OIDC) and OAuth 2.0.
+Identity is an identity provider (IdP) web application that uses the [OpenID Connect](https://openid.net/connect/) authentication protocol.
 
 - **Repo:** [github.com/cmu-sei/identity](https://github.com/cmu-sei/identity)
 - **Identity doc:** [Identity Guide](identity/index.md)
