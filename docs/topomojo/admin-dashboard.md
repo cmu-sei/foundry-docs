@@ -17,6 +17,3 @@ In the Message field, enter the content of the announcement and click **Send**.
 ### Janitor
 
 **Cleanup Report:**
-
-
-

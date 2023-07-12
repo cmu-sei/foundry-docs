@@ -2,7 +2,7 @@
 
 The **Workspaces** tab is where the admin can search for workspaces. Once workspaces are found, the admin can perform limited actions. This is useful because...
 
-Use the **Search** field to locate a workspace. Selecting a workspace takes you the **Settings** tab of that particular workspace. For additional help on the **Settings** tab, see [Building a new workspace](/tm-building-a-workspace.md).
+Use the **Search** field to locate a workspace. Selecting a workspace takes you the **Settings** tab of that particular workspace. For additional help on the **Settings** tab, see [Building a new workspace](building-a-workspace.md).
 
 The *workspace identifier* is present here too. The workspace identifier matches the directory name used to store workspace files like unlinked virtual machines, Markdown documents, images, etc. Copying it to the clipboard is useful if you need to use it in a terminal when navigating the filesystem. The workspace identifier is called out in the screen capture below.
 
