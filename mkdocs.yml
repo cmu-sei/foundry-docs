@@ -42,13 +42,14 @@ nav:
 - Identity guide:
   - About Identity: identity/index.md
   - Getting started with Identity: identity/getting-started.md
+  - Logging in with user account: identity/user-account-login.md
   - Identity Home: identity/home.md
   - Identity Grants: identity/grants.md
   - Identity Profile: identity/profile.md
   - Identity Integration: identity/integration.md
   - Identity Accounts: identity/accounts.md
 - TopoMojo guide:
-  - About TopoMojo: topomojo/index.md
+  - About TopoMojo: topomojo/about.md
   - Getting started with TopoMojo: topomojo/getting-started.md
   - Finding an existing space: topomojo/finding-a-space.md
   - Building a new space:

@@ -8,11 +8,13 @@ The Settings tab holds the metadata for your lab.
 
 **Title:** The title of your workspace; remember that the title should be unique.
 
-**Description:** A brief description of your workspace to display when browsing titles.
+**Description:** A brief description of your workspace to display when browsing titles. The **Description** is viewable to everyone, and when used in conjunction with Gameboard, visible there too.
+
+**Tags:** Internal metadata to add data about the lab; for example, if using for a cyber competition, then your tag may be something like `cyber-cup c01`. Now, you can search for that challenge (or lab) using that tag.
 
 **Authorship:** Your name and the names of others who may have assisted you.
 
-**Audience:** A space-delimited list of clients who can launch the workspace as a gamespace; '`everyone`' is the global audience.
+**Audience:** A space-delimited list of administrator-defined groups that have permission to deploy gamespaces from the workspace. Administrators define an *audience* with any name here. Only users with a *scope* matching one of the provided *audiences* are permitted to deploy gamespaces from the workspace. `Everyone` is the global audience that allows all users to deploy gamespaces from the workspace. For more information, see the [Admin Dashboard - Users](admin-users.md) documentation.  
 
 **Duration:** Recommended length of time in minutes that it takes to play through a gamespace launched from your workspace.
 
