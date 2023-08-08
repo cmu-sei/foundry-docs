@@ -21,7 +21,7 @@ Recall from workspace Settings that "audience" is a list of clients who can laun
 
 **Name:**
 
-**Scope:**
+**Scope:** A space-delimited list of administrator-defined groups the user belongs to. Administrators can define a *scope* with any name here. A user's scope determines which workspaces they have permission to deploy gamespaces from. Users can only deploy a gamespace from a workspace if the user has a *scope* that matches an *audience* defined in the workspace. See also: [Building a new workspace](building-a-workspace.md).
 
 **Workspace Limit:**
 
