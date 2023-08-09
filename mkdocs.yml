@@ -60,11 +60,12 @@ nav:
     - Play: topomojo/play.md
   - Admin features:
     - Admin Dashboard: topomojo/admin-dashboard.md
-    - Gamespaces: topomojo/admin-dashboard.md
+    - Gamespaces: topomojo/admin-gamespaces.md
     - Workspaces: topomojo/admin-workspaces.md
     - Templates: topomojo/admin-templates.md
     - Machines: topomojo/admin-machines.md
-    - Users: topomojo/admin-users.md    
+    - Users: topomojo/admin-users.md
+    - Log: topomojo/admin-log.md    
   - Copy and paste: topomojo/copy-paste.md
 - Gameboard guide:
   - About the Gameboard: gameboard/index.md

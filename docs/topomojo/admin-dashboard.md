@@ -6,6 +6,8 @@ TopoMojo has an admin interface called **Admin Dashboard**. To access the Admin 
 
 ### Hub Connections
 
+**Hub connections** informs Topo admins about which users are currently logged into TopoMojo.
+
 ### Announcement
 
 The **Announcement** feature allows Topo admins to broadcast important messages to <!-- to whom?-->. Among other uses, these could be messages regarding <!-- what?-->. Announcements appear <!--where--> in the Topo interface. 
