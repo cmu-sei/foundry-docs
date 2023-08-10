@@ -1,6 +1,6 @@
 # Admin Workspaces
 
-The **Workspaces** tab is where the admin can search for workspaces. Once workspaces are found, the admin can perform limited actions. This is useful because...
+The **Workspaces** tab is where the admin can search for workspaces and perform limited actions. This is useful because...
 
 Use the **Search** field to locate a workspace. Selecting a workspace takes you the **Settings** tab of that particular workspace. For additional help on the **Settings** tab, see [Building a new workspace](building-a-workspace.md).
 

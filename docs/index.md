@@ -18,7 +18,7 @@ Identity is an identity provider (IdP) web application that uses the [OpenID Con
 TopoMojo is virtual lab builder and player. Create training content and publish it so other people can consume it.
 
 - **Repo:** [github.com/cmu-sei/topomojo](https://github.com/cmu-sei/topomojo)
-- **TopoMojo doc:** [TopoMojo Guide](topomojo/about.md)
+- **TopoMojo doc:** [TopoMojo Guide](topomojo/index.md)
 
 ## Gameboard
 

@@ -49,7 +49,7 @@ nav:
   - Identity Integration: identity/integration.md
   - Identity Accounts: identity/accounts.md
 - TopoMojo guide:
-  - About TopoMojo: topomojo/about.md
+  - About TopoMojo: topomojo/index.md
   - Getting started with TopoMojo: topomojo/getting-started.md
   - Finding an existing space: topomojo/finding-a-space.md
   - Building a new space:
