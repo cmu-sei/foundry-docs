@@ -19,3 +19,14 @@ When **Client Enabled** is checked by an Admin, the client (application) is avai
 *Screen print 2: Client*
 
 ![client](img/client-tab.png)
+
+## Additional Information
+
+Many of the options found here are described in the IdentityServer 4 documentation. You might find these topics helpful.
+
+- [Defining Clients](https://identityserver4.readthedocs.io/en/latest/topics/clients.html)
+- [Defining Resources](https://identityserver4.readthedocs.io/en/latest/topics/resources.html)
+- [Consent](https://identityserver4.readthedocs.io/en/latest/topics/consent.html)
+- [Client](https://identityserver4.readthedocs.io/en/latest/reference/client.html)
+- [API Resource](https://identityserver4.readthedocs.io/en/latest/reference/api_resource.html)
+- [API Scope](https://identityserver4.readthedocs.io/en/latest/reference/api_scope.html)

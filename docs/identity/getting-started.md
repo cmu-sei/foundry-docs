@@ -1,24 +1,31 @@
-# Logging in
+# Getting Started with Identity
 
-These procedures are written from a user's point-of-view *after* a systems administrator stands up  Identity server in your environment.
+Start here, in the CMU-SEI Identity GitHub repository: [github.com/cmu-sei/Identity](https://github.com/cmu-sei/Identity).
 
-## Reset my password
+## Reference
 
-1. At the Credentials screen, click **Reset my password**.
-2. At the Reset screen, enter the email address you registered with on Identity. Reminder: you will need to access this email inbox in the next steps. The verification code may take some time to arrive in your Inbox.
-3. Open the email that contains the six-digit verification code.
-4. At the Reset screen, enter the six-digit verification code sent to you from Identity and click **Confirm**.
-5. Enter your new password, confirm that password, and click Reset. Passwords must contain:
-- at least eight characters
-- uppercase and lowercase letters
-- numbers
-- symbols
-9.	Optionally, you may configure your account for 2fa at this time (see the [Profile documentation](profile.md), under "Configure 2FA").
+Have the latest documentation on hand: [IdentityServer4 Docs](https://identityserver4.readthedocs.io/en/latest/index.html).
 
-## Register for an account
+## Resources
 
-1. If you are new to Identity, click **Register for an account**. Enter an email address with one of the approved domains (if configured).
-2. Click **Send Verification Code**. A code is sent to the email address you provided.
-3. Enter the Code and click **Confirm**.
-4. Enter a Password and **Confirm Password**. See above for password complexity requirements.
-5. Click **Register**.
+- identity.values.yaml
+- [appsettings.conf](https://github.com/cmu-sei/Identity/blob/master/src/IdentityServer/appsettings.conf)
+- [Identity Helm Chart](https://github.com/cmu-sei/helm-charts/blob/main/charts/identity)
+
+## Identity API and UI ingress
+
+### Identity API
+
+### Identity UI
+
+## Identity Environmental Variables Settings
+
+## HTML pages for Notice, Terms, and Trouble
+
+## Identity Seed Data
+
+### Sample Seed Data
+
+## Certificate to Sign Tokens
+
+## Using Helm to install Identity

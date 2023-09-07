@@ -71,6 +71,7 @@ nav:
   - About the Gameboard: gameboard/index.md
   - Getting started with Gameboard: gameboard/getting-started.md
   - Using integrated support: gameboard/support.md
+  - Using Reports in beta: gameboard/reports-beta.md
   - Administering games: 
     - Administration: gameboard/admin.md
     - Roles: gameboard/admin-roles.md
