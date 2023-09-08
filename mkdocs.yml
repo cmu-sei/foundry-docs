@@ -70,6 +70,7 @@ nav:
 - Gameboard guide:
   - About the Gameboard: gameboard/index.md
   - Getting started with Gameboard: gameboard/getting-started.md
+  - Participating in a game: gameboard/participating.md
   - Practicing challenges: gameboard/practice-area.md
   - Using integrated support: gameboard/support.md
   - Using Reports in beta: gameboard/reports-beta.md
@@ -84,7 +85,6 @@ nav:
     - Feedback form: gameboard/admin-feedback-form.md
     - Completion Certificates: gameboard/completion-certificates.md
     - Clone, yaml, json, Delete: gameboard/admin-clone-yaml-json.md
-  - Participating in a game: gameboard/participating.md
 
 # Copyright
 copyright: Copyright &copy; 2023 Carnegie Mellon University

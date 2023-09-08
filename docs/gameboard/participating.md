@@ -11,13 +11,16 @@ This topic describes the Gameboard from a participant's point-of-view. A *partic
 
 ## The Profile screen
 
-**Certificates:** View and print a certificate as proof of participation. Certificates are unique to the player and specific to a game.
+**Certificates:** View and print a certificate as proof of participation. This feature allows players to provide a record of achievements to friends, colleagues, and organizations to validate professional development time. Select **Competitive** to find and print certificates which validate player performance in a *game*. Select **Practice** to find and print certificates which validate player performance in a *practice challenge*. You can also save them as PDFs. 
+
+- **Publish/Unpublish:** Optionally "publish" a certificate on a per-certificate basis. Players can send the link to the certificate to anyone including non-Gameboard users. Players can "unpublish" a certificate at any time removing access to the certificate.
+- **Open:** Launches the certificate in a new tab in the browser.
 
 **History:** View game history, including where you finished on the scoreboard and whether it was in practice or competition.
 
 **Display Name:** Set a default name for public display that is suitable for all audiences. This name will apply to all new games, however, you can customize it during registration.
 
-**Sponsoring organization:** Select *your* organization. Gameboard admins define who the sponsors are and what image to associate with each. 
+**Sponsoring organization:** Select *your* organization. Gameboard admins define who the sponsors are and what image to associate with each.
 
 ## The Home screen
 
@@ -77,24 +80,40 @@ After submitting the ticket, you can always **add a comment** and attach another
 
 ### Finding an existing ticket
 
-From the Support page, use the dropdowns and the **Search** field to locate existing tickets. 
+From the Support page, use the dropdowns and the **Search** field to locate existing tickets.
 
 Filter tickets by status: Any, Open, In progress, Not closed (*open* plus *in progress*), and Closed.
 
 Search by entering terms. Search covers ticket summary, labels, challenge titles, and player name.
 
-## Giving feedback
+## Giving feedback as a player
 
-### Playing in Practice mode
+Provided that a Gameboard administrator has enabled and configured the *feedback* feature, players are permitted **one** feedback submission per game and per challenge. Every member of a team is permitted to provide individual feedback. The feedback form is available at any time after session is started. This way, if participants quit the game before time expires they still have the opportunity to submit feedback.
 
-<!-- Completing the Practice round
+*The screen print below shows an example of a challenge feedback form as a player would see it.*
 
-We recommend that you and your team complete the practice round before jumping into the first
-round of the competition.
+![challenge form](img/challenge-feedback.png)
 
-After logging in, under **Competition**, select the **Practice** competition.
+Completing a challenge is not a requirement for submitting challenge feedback. Participants are able to begin a challenge, go through it, not make any submissions and still provide feedback. Perhaps the challenge was either too difficult for them or they just went down the wrong path. Either way, their feedback is valuable.
 
-Select a category and point value to start a challenge in the demo.
+Only feedback that has been submitted can be viewed in the reports. Once feedback has been submitted, a participant cannot go back and edit their feedback.
 
-Follow the challenge instructions presented on the screen to get an idea of how the competition
-works. -->
+??? note "Note on submitted vs in progress"
+
+    "In progress" feedback is feedback a participant has begun in some capacity that triggered the autosave feature at least once but they have not clicked the **Submit** button yet. "In progress" feedback (i.e., *autosaved* feedback) and "submitted" feedback are both stored in the database; however, only submitted feedback is queried for the reports. 
+
+This documentation assumes that you you are logged into a game and successfully enrolled. To view the *game* feedback as a participant:
+
+Select a game tile then click **Start**, then **Confirm** to start the session.
+
+Expand the **Game Feedback** form and complete the survey. Click **Submit**, then **Confirm** when finished. Responses can't be edited after clicking **Submit**. Game feedback responses do autosave. 
+
+To view the *challenge* feedback as a participant:
+
+Select a game tile then click **Start**, then **Confirm** to start the session. Continue to Gameboard and start a challenge.
+
+Expand the **Challenge Feedback** form and complete the survey. Click **Submit**, then **Confirm** when finished. Responses can't be edited after clicking **Submit**. Challenge feedback responses do autosave. 
+
+Whether or not the feedback form is expanded or collapsed depends upon the status of the game or the challenge. If a game is active, then participants will manually expand the feedback form. If a game is complete, the feedback form is automatically expanded.
+
+The same is true of challenge feedback. If participants are actively working a challenge, they will manually expand the feedback form. When participants complete a challenge, the challenge feedback form expands automatically (and collapses when submitted). The feedback form section can be expanded or collapsed at any time once the session has started.
