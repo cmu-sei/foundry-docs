@@ -20,13 +20,13 @@ The *workspace identifier* is present here too. The workspace identifier matches
 
 <!--what are we doing here that is different from "building a workspace"?-->
 
-**Refresh**: (arrows) Refresh queries the state of the VM from the hypervisor. This is useful if you run a `shutdown` command in the VM and the TopoMojo UI icons haven't updated to reflect the powered off state of the VM yet. 
+**Refresh**: (arrows) Refresh queries the state of the VM from the hypervisor. This is useful if you run a `shutdown` command in the VM and the TopoMojo UI icons haven't updated to reflect the powered-off state of the VM yet. 
 
 **Deploy**: (lightning bolt) Deploys that virtual machine into your workspace.
 
 **Console:** Opens the console for the virtual machine.
 
-**Stop/Start:** Power off/on the VM, but leaves the resource deployed on the hypervisor. Clicking **stop** results in the hypervisor showing a deployed VM in a powered off state.  Clicking **start** powers on the deployed VM.
+**Stop/Start:** Power off/on the VM, but leaves the resource deployed on the hypervisor. Clicking **stop** results in the hypervisor showing a deployed VM in a powered-off state.  Clicking **start** powers on the deployed VM.
 
 **Revert:** Reverts the VM to its last saved state. All changes made since the last commit are lost.
 

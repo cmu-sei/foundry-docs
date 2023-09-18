@@ -4,7 +4,7 @@ The **Document** tab in a Topo workspace is where you write the instructions tha
 
 The Topo editor is a collaborative editor. Multiple people can work on the documentation at the same time. As long as you are "connected" (see the top-right corner) your updates to the document are being saved.
 
-More information about Markdown, including the syntax guide, can be found at [markdownguide.org]().
+More information about Markdown, including the syntax guide, can be found at [markdownguide.org](https://www.markdownguide.org/).
 
 ## Inserting an image
 
