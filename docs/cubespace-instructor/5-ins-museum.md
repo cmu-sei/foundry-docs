@@ -8,7 +8,7 @@ The Aurelian’s have a massive museum where they showcase many of the objects t
 
 ## Getting Started
 
-1. From one of the operator terminals, open a web browser and navigate to [http://10.10.10.151](http://10.10.10.151/).
+1. From one of the operator terminals, open a web browser and navigate to `10.10.10.151`.
 2. Click the Grade Challenge button.
 
 ![image 80](img/image80.png)
@@ -426,7 +426,7 @@ pilotnet
 
 ### Run the Grading Script
 
-From one of the operator terminals, open a web browser and navigate to [http://10.10.10.151](http://10.10.10.151/). Click the Grade Challenge button.
+From one of the operator terminals, open a web browser and navigate to `10.10.10.151`. Click the Grade Challenge button.
 
 ![image 83](img/image83.png)
 
