@@ -1,6 +1,12 @@
 # Admin Templates
 
-The **Templates** tab is where the admin configures all of their virtual machines. 
+The **Templates** tab is where you can view all of the templates that exist in TopoMojo.
+
+**Search:** Search for templates by workspace. Notice that you can apply filters here to further narrow down your search. In the screen print below, the filter is for linked VMs with a parent template of a VM called `kali-201901`.
+
+![templates filter](/docs/topomojo/img/templates-filter.png)
+
+You can filter for specific workspaces here too. Clicking the *name* of the of the workspace takes you directly to the workspace. In the screen print below, 
 
 !!! note "Linked and unlinked templates"
 

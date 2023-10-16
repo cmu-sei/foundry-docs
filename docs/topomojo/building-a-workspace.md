@@ -32,9 +32,9 @@ The template selector allows you to add virtual machine templates to your worksp
 
 To add a template to your workspace:
 
-1.	On the Templates tab, click **Add Templates**.
-2.	Search for and add the templates you need for your topology. 
-3.	Click the **edit** icon to expand the template(s) to make changes. 
+1. On the Templates tab, click **Add Templates**.
+2. Search for and add the templates you need for your topology. 
+3. Click the **edit** icon to expand the template(s) to make changes. 
 
 ![templates-edit](img/templates-edit.png)
 
