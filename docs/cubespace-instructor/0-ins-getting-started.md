@@ -32,7 +32,7 @@
 
     !!! note "Optional"
 
-    Once enrolled, a team leader can **generate** an invitation code to provide to other members who are currently logged in so that they can **redeem** it and play as a team. See **Individual Vs Team Play Methods** section for more details.
+        Once enrolled, a team leader can **generate** an invitation code to provide to other members who are currently logged in so that they can **redeem** it and play as a team. See **Individual Vs Team Play Methods** section for more details.
 
     ![image 8](img/image8.png)
 
