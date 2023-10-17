@@ -213,10 +213,14 @@ Generate the Root CA, Intermediate and Server Certificates.
     dir = /home/user/root/tls/intermediate # Where everything is kept  
     certificate     = $dir/certs/intermediate.cacert.pem   # The CA certificate  
     private_key     = $dir/private/intermediate.cakey.pem  # The private key
+    ```
+    After updating, ensure there is a space between `$dir/private/intermediate.cakey.pem` and `# The private key`.
+    
+    Scroll down further to find the `policy` and change it:
+    
+    ```
     policy          = policy_anything  
     ```
-
-    After updating, ensure there is a space between `$dir/private/intermediate.cakey.pem` and `# The private key`.
 
 11. Save the file.
 12. Create  the intermediate key
