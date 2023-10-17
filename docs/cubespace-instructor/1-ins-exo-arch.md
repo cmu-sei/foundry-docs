@@ -30,25 +30,25 @@ HVAC Emergency Feature: If Manual Vent button breaks, then both Trigger LEDs mus
 
 1. Scan the network using this command: **nmap 10.10.10.0/24**
 
-Here are the results.
+    Here are the results.
 
-![image 28](img/image28.png)
+    ![image 28](img/image28.png)
 
-There are three IP addresses of note with open ports: 
+    There are three IP addresses of note with open ports: 
 
-- **10.10.10.110**  -- port 80 http
-- **10.10.10.112**  -- port 80 http; port 8080 http-proxy; port 10000 snet-sensor-mgmt; and port 10002 documentum
-- **10.10.10.115**  -- ports 139 and 445 smb 
+    - **10.10.10.110**  -- port 80 http
+    - **10.10.10.112**  -- port 80 http; port 8080 http-proxy; port 10000 snet-sensor-mgmt; and port 10002 documentum
+    - **10.10.10.115**  -- ports 139 and 445 smb 
 
-2. Open Firefox and browse to each IP address and port 80:  http://10.10.10.110:80 http://10.10.10.112:80 
+2. Open Firefox and browse to each IP address and port 80: `10.10.10.110:80`; `10.10.10.112:80`
 
-Here are the results for http://10.10.10.110:80: 
+    Here are the results for `10.10.10.110:80`: 
 
-![image 29](img/image29.png)
+    ![image 29](img/image29.png)
 
-And the results for http://10.10.10.112:80:
+    And the results for `10.10.10.112:80``:
 
-![image 32](img/image32.png)
+    ![image 32](img/image32.png)
 
 ## Exploring the Orange Juice Bar website
 
