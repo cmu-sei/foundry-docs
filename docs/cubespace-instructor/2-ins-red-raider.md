@@ -23,18 +23,18 @@ The attacker will conduct an exploit against a known vulnerability in policy kit
 
 Using this exploit the pirates will create a root-level account on the codex-decoder under `pirate|phantom`.
 
-![image 72](/img/image72.png)
+![image 72](img/image72.png)
 
 The way to prevent this attack is to either disable the policy kit (not recommended, though not impossible) or disable the malicious user account. In theory, if the account is disabled, but not deleted, the attack script will fail to do anything further. Players could block the attacker IP, effectively blocking it from doing anything further. SSH connection logs/auth.log or firewall state logs should show the attacker IP address and the account name.
 
-![image 73](/img/image73.png)
+![image 73](img/image73.png)
 
 Now that the pirate-attacker has a root account on the system, it will attempt to pass an ssh command through the codex-decoder to the ship-critical-systems VM to shutdown and remove all Docker containers.
 
 The way to prevent this attack would be to block the attacker system at the source/gateway firewall, disable remote Docker commands on the ship-critical-systems VM, disable the pirate account on the codex-decoder, or set up some type of watchdog service to make sure the
 containers stay up.
 
-![image 74](/img/image74.png)
+![image 74](img/image74.png)
 
 The process described above will run endlessly on a loop for the duration of the scenario. If teams remove the pirate account, it will attempt to add it back. If teams leave the deepspace network and return, it will try all attack efforts again on a loop. If the attacker system ever loses access, it will loop in place until access is restored. The real solution is to block the attacker IP at the gateway firewall.
 
@@ -57,17 +57,17 @@ Then, use John the Ripper against this file with the wordlist:
 
 `john --wordlist=/path/to/your/wordlist.txt passwords.txt`
 
-![image 75](/img/image75.png)
+![image 75](img/image75.png)
 
 The screen capture above is only an example. The actual password will be `phantom`. Teams should scan for, and then scan, the running services of the raider-codex-decoder system running at 10.10.10.123 which is running SMB over port 445. Teams will know that the 10.10.10.0/24 space is the operating space based on logs from the attacker's SSH connections.
 
-![image 76](/img/image76.png)
+![image 76](img/image76.png)
 
 SMB is running just as it is in the codex-decoder on the pirate-decoder. Access to this share allows teams to capture any files with the found credentials.
 
 Teams can query for the running shares:
 
-![image 77](/img/image77.png)
+![image 77](img/image77.png)
 
 Connect and get the contents of the Alien Language Share. 
 
@@ -79,8 +79,8 @@ Use **ls** to see the contents of the SMB share. There is a zip file named file_
 
 Retrieve file_codex_b.zip using the command: `get file_codex_b.zip`
 
-![image 78](/img/image78.png)
+![image 78](img/image78.png)
 
 Navigate to where file_codex_b.zip has been downloaded on the workstation. Extract the contents. There are two files. The file pirate-dictionary is CodexB. Upload this file to the Decrypter Workstation to complete the mission.
 
-![image 79](/img/image79.png)
+![image 79](img/image79.png)

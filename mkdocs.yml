@@ -87,6 +87,7 @@ nav:
     - Clone, yaml, json, Delete: gameboard/admin-clone-yaml-json.md
 - Cubespace Instructor Guide:
   - Cubespace Getting Started: cubespace-instructor/0-ins-getting-started.md
+  - In-game/Out-of-game copy and paste: topomojo/copy-paste.md
   - The EXO-Archeologists Solution: cubespace-instructor/1-ins-exo-arch.md
   - The Red Raider Solution: cubespace-instructor/2-ins-red-raider.md
   - The Ancient Ruins Solution: cubespace-instructor/3-ins-ruins.md

@@ -121,6 +121,7 @@ The Orange Juice Bar website uses the same template on every tab. This indicates
 4. Use the Python objects to navigate the inheritance tree. For this, we'll use mostly two classes:
 
     `__mro__ / mro()` (*note the two underscores with no space in between*)
+    
     `__subclasses__` (*again, note the two underscores with no space in between*)
 
 5. Try to access the object base class. Create a new object using a simple integer (type int). Here is an example of our payload:
@@ -143,7 +144,7 @@ The Orange Juice Bar website uses the same template on every tab. This indicates
 
 Here is our script:
 
-    ```
+```
     #!/bin/bash
 
     ### STEP 1: Once you see all available classes in the application, copy and paste the website link and use it to make a curl like: 
@@ -171,20 +172,20 @@ Here is our script:
     echo "Only adding lines that include 'class &#39;' to a file. $step_3" > /dev/null 2>&1
         
     echo -e "Showing which line contains 'subprocess.Popen'. \nThe result is line: $step_4" 
-    ```
-    The result equals 312. Let's build our latest payload using that index:
+```
+    
+The result equals 312. Let's build our latest payload using that index:
 
-    ```
-    {{2022.__class__.__mro__[1].__subclasses__()[312]}}
-    ```
+```
+{{2022.__class__.__mro__[1].__subclasses__()[312]}}
+```
+And here is the result:
 
-    And here is the result:
+![image 48](img/image48.png)
 
-    ![image 48](img/image48.png)
+Index 312 is indeed subprocess.Popen.
 
-    Index 312 is indeed subprocess.Popen.
-
-    Do not skip this step because your index might be different.
+Do not skip this step because your index might be different.
 
 8. Now, that we have the right index, subprocess.Popen allows us to  execute commands. The following payload is an example:
 
@@ -255,7 +256,7 @@ Here is our script:
 
 ## Fixing HVAC Sector 6 venting
 
-1. Go to [**http://10.10.10.112**](http://10.10.10.112/) to use the credentials. You should see a page like this one:
+1. Go to `http://10.10.10.112` to use the credentials. You should see a page like this one:
 
     ![image 58](img/image58.png)
 
@@ -293,10 +294,11 @@ Here is our script:
     Let's go back to the HVAC_Scheme.sch and try setting the temperature to this.
 
     Remember to follow the HVAC Instructions.
-   - Turn the system On. The SYSTEM ON/OFF light comes on.
-   - Turn the fan On. In 10 seconds, the FAN ON/OFF light comes on.
-   - Turn the heat On. It doesn't matter if you choose heat or cool; either will work. In 10 seconds, the HEAT ON/OFF light comes on.
-   - Click Enter Temperature Here and enter 108.
+   
+      - Turn the system On. The SYSTEM ON/OFF light comes on.
+      - Turn the fan On. In 10 seconds, the FAN ON/OFF light comes on.
+      - Turn the heat On. It doesn't matter if you choose heat or cool; either will work. In 10 seconds, the HEAT ON/OFF light comes on.
+      - Click Enter Temperature Here and enter 108.
 
     The temperature starts to rise. Once it reaches 108 degrees, the Trigger 1 light comes on.
 
