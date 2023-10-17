@@ -258,116 +258,118 @@ password: the_HVAC_master_21!!
 
 1. Go to [**http://10.10.10.112**](http://10.10.10.112/) to use the credentials. You should see a page like this one:
 
-![image 58](img/image58.png)
+    ![image 58](img/image58.png)
 
 2. Once in, explore the page and see what we find.
 
-![image 59](img/image59.png)
+    ![image 59](img/image59.png)
 
-In the tree on the left, it looks like we have access to three schemes: one controls the HVAC and two others relate to past scenarios.
+    In the tree on the left, it looks like we have access to three schemes: one controls the HVAC and two others relate to past scenarios.
 
 3. Start by reviewing 1.sch and 2.sch.
 4. Select 1.sch and notice the graph.
 
-![image 60](img/image60.png)
+    ![image 60](img/image60.png)
 
-If you hover over that graph, it changes to this graph.
+    If you hover over that graph, it changes to this graph.
 
-![image 61](img/image61.png)
+    ![image 61](img/image61.png)
 
-In both graphs there was a moment where the temperature suddenly spiked to an extreme high temperature in 2020 and an extreme low temperature in 2017.
+    In both graphs there was a moment where the temperature suddenly spiked to an extreme high temperature in 2020 and an extreme low temperature in 2017.
 
 5. Select 2.sch. Pay close attention to the bottom of the graph; this graph reflects the changes in Trigger 2 Light.
 
-![image 62](img/image62.png)
+    ![image 62](img/image62.png)
 
-If you hover over that graph, it changes to this graph.
+    If you hover over that graph, it changes to this graph.
 
-![image 63](img/image63.png)
+    ![image 63](img/image63.png)
 
 6. Pay close attention to the bottom of the graph; this graph reflects  the changes in Trigger 1 Light.
 
-We need Trigger 1 and Trigger 2 to be active to manually vent the atmosphere. We can use these past scenarios to see what caused the events to occur.
+    We need Trigger 1 and Trigger 2 to be active to manually vent the atmosphere. We can use these past scenarios to see what caused the events to occur.
 
-Start with Trigger 1. Examine both graphs during 16/06/2020 and note the light went from 0 (inactive) to 1 (active) at the same time the temperature reached exactly 108 degrees.
+    Start with Trigger 1. Examine both graphs during 16/06/2020 and note the light went from 0 (inactive) to 1 (active) at the same time the temperature reached exactly 108 degrees.
 
-Let's go back to the HVAC_Scheme.sch and try setting the temperature to this.
+    Let's go back to the HVAC_Scheme.sch and try setting the temperature to this.
 
-Remember to follow the HVAC Instructions.
-- Turn the system On. The SYSTEM ON/OFF light comes on.
-- Turn the fan On. In 10 seconds, the FAN ON/OFF light comes on.
-- Turn the heat On. It doesn't matter if you choose heat or cool; either will work. In 10 seconds, the HEAT ON/OFF light comes on.
-- Click Enter Temperature Here and enter 108.
+    Remember to follow the HVAC Instructions.
+   - Turn the system On. The SYSTEM ON/OFF light comes on.
+   - Turn the fan On. In 10 seconds, the FAN ON/OFF light comes on.
+   - Turn the heat On. It doesn't matter if you choose heat or cool; either will work. In 10 seconds, the HEAT ON/OFF light comes on.
+   - Click Enter Temperature Here and enter 108.
 
-The temperature starts to rise. Once it reaches 108 degrees, the Trigger 1 light comes on.
+    The temperature starts to rise. Once it reaches 108 degrees, the Trigger 1 light comes on.
 
-![image 64](img/image64.png)
+    ![image 64](img/image64.png)
 
 7. Do the same with the remaining two graphs from 05/04/2017. The light went from 0 (inactive) to 1 (active) at the same time the temperature reached -56 degrees. Go back to the HVAC_Scheme.sch and try setting the temperature to -56.
 8. No need to change heat to cool--you can click Enter temperature  here and enter -56 degrees and watch the temperature go down.
 
-Once the temperature reaches -56 degrees, the Trigger 2 light comes on.
+    Once the temperature reaches -56 degrees, the Trigger 2 light comes on.
 
-![image 65](img/image65.png)
+    ![image 65](img/image65.png)
 
-One more step to go.
+    One more step to go.
 
 9. The Sector 6 Manual Vent button doesn't work. We need another way to send a trigger. Perform another nmap scan using this command.
 
-```
-sudo nmap -sSV -p- 10.10.10.112
-```
+    ```
+    sudo nmap -sSV -p- 10.10.10.112
+    ```
 
-![image 66](img/image66.png)
+    ![image 66](img/image66.png)
 
-This scan reveals a new open port -- 1205 modbus -- we can send manual commands to the modbus.
+    This scan reveals a new open port -- 1205 modbus -- we can send manual commands to the modbus.
 
-We're going to write a script to send manual commands to the modbus service. However, you should understand these terms: coils, discrete inputs, input registers, and holding registers.
-- Coils: 1-bit registers. Used to control discrete outputs. May be read or written.
-- Discrete inputs: 1-bit registers. Used as inputs. May only be read.
--  Input registers: 16-bit registers. Used for input. May only be read.
--  Holding registers: 16-bits registers. Used for inputs, outputs or holding data. May be read or written.
+    We're going to write a script to send manual commands to the modbus service. However, you should understand these terms: coils, discrete inputs, input registers, and holding registers.
+    
+    - Coils: 1-bit registers. Used to control discrete outputs. May be read or written.
+    - Discrete inputs: 1-bit registers. Used as inputs. May only be read.
+    - Input registers: 16-bit registers. Used for input. May only be read.
+    - Holding registers: 16-bits registers. Used for inputs, outputs or holding data. May be read or written.
 
 10. Knowing what you know about coils, discrete inputs, input registers, and holding registers, to manually vent Sector 6, we should change the vent value from 0 to 1. To do this, we will write a Python script; and to write the script, we will download a Python module called pymodbus.
 
-```
-pip install pymodbus
-```
+    ```
+    pip install pymodbus
+    ```
 
 11. Here is the script we used. Our solution guide range is from 0 to 8185. You can type any range you want but once your script goes above 8185, it will stop reading/writing to coils. This modbus has the address range from 0 to 8186. We called it vent.py.
 
-```
-from pymodbus.client.sync import ModbusTcpClient as ModbusClient
-import time
+    ```
+    from pymodbus.client.sync import ModbusTcpClient as ModbusClient
+    import time
 
-client = ModbusClient('10.10.10.112', port=1205)
+    client = ModbusClient('10.10.10.112', port=1205)
 
-unit=0x01
+    unit=0x01
 
-for x in range(0,8185):
+    for x in range(0,8185):
 
-    # Get the state
-    rr = client.read_coils(x, 1, unit=unit)
-    print(x, "- Sector 6 Manual Vent Button output: " + str(rr.getBit(0)))
+        # Get the state
+        rr = client.read_coils(x, 1, unit=unit)
+        print(x, "- Sector 6 Manual Vent Button output: " + str(rr.getBit(0)))
 
-    # Manually write
-    client.write_coil(x, True, unit=unit)
+        # Manually write
+        client.write_coil(x, True, unit=unit)
 
-    # Get the state
-    rr = client.read_coils(x, 1, unit=unit)
-    print(x, "- Sector 6 Manual Vent Button output: " + str(rr.getBit(0)))
-```
+        # Get the state
+        rr = client.read_coils(x, 1, unit=unit)
+        print(x, "- Sector 6 Manual Vent Button output: " + str(rr.getBit(0)))
+    ```
+
 12. Run it using the following command: `python3 vent.py`
 13. The method the script above uses turns all the coils from off to on--including coils related to heat, cool, fan, system, and vents. What this mean is that heating, cooling, fan, system and vents will all be turned on, which goes against the HVAC Instructions provided at the beginning of the solution guide. To fix this, the easiest solution would be to go to the HVAC dashboard and turn the following off:
-- Cooling
-- Heating
-- Fan
-- System
+    - Cooling
+    - Heating
+    - Fan
+    - System
 
 14. And then, turn only the essential buttons needed for the HVAC to  work. In this example, we will turn System, Cooling and Fan On. Once you do this, the HVAC will be back to a fully functional state.
 15. Go to HVAC_Scheme.sch. The Venting Sector 6 light should be green!
 
-![image 67](img/image67.png)
+    ![image 67](img/image67.png)
 
 ## Retrieving the Codex
 
@@ -375,18 +377,18 @@ Once Sector 6 is vented (mission accomplished!), retrieve your codex using the S
 
 1. Open the files directories and select Browse Network.
 
-![image 68](img/image68.png)
+    ![image 68](img/image68.png)
 
 2. In the search bar, enter: smb://10.10.10.115
 
-![image 69](img/image69.png)
+    ![image 69](img/image69.png)
 
-The archeologydatashare folder is visible.
+    The archeologydatashare folder is visible.
 
-![image 70](img/image70.png)
+    ![image 70](img/image70.png)
 
 3. Double-click archeologydatashare, select Anonymous, then click Connect.
 
-![image 71](img/image71.png)
+    ![image 71](img/image71.png)
 
 You have retrieved your codex!
