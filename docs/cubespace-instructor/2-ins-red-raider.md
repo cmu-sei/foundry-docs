@@ -68,17 +68,27 @@ The way to prevent this attack would be to block the attacker system at the sour
 
 ![image 74](img/image74.png)
 
-The process described above will run endlessly on a loop for the duration of the scenario. If teams remove the pirate account, it will attempt to add it back. If teams leave the deepspace network and return, it will try all attack efforts again on a loop. If the attacker system ever loses access, it will loop in place until access is restored. The real solution is to block the attacker IP at the gateway firewall.
+The pirate attack process described above runs endlessly for the duration of the scenario.
+
+- If teams remove the pirate account, the attack process attempts to add it back.
+- If teams leave the deepspace network and return, the attack process tries again on a loop.
+- If the attacker system loses access, it loops in place until access is restored.
+
+Unless teams block the pirate attacker, they are continuously attacked. The real solution here is to block the attacker IP at the gateway firewall.
+
+!!! info
+
+	Blocking the attack is not required to solve this challenge. However, not blocking the attack while the ship is within range of the pirate's deepspace network can lead to issues with the `ship-critical-system` Docker containers as described above.
 
 ## Gaining access to the Pirate Codex
 
 Attacking the raider-codex-decoder can be done with the same policy kit exploit, though it would be tricky to figure out this is what led to the account creation. Teams would need to research this exploit to know how to conduct it and read their own codex-decoder logs to understand it.
 
-The easier way - and the way described in this guide - is to discover that the same `pirate|phantom` credentials will work on the raider-decoder's SMB share.
+The easier way - and the way described in this guide - is to discover that the same `pirate|phantom` credentials added to your codex-decoder system will work on the raider-decoder's SMB share.
 
-John the Ripper can assist in this. Simply extract the /etc/shadow contents for the pirate account and the /etc/passwd contents for the pirate account from the codex-decoder.
+John the Ripper can assist. Extract the codex-decoder system's `/etc/shadow` file contents for the pirate account and the `/etc/passwd` file contents for the pirate account from the codex-decoder. I.e., *both* the `/etc/shadow` and `/etc/passwd` file contents are on the codex-decoder system.
 
-From an operator-terminal you can ssh to the decoder and collect those files:
+From an operator-terminal, you can ssh to the decoder and collect those files:
 
 - `ssh user\@10.5.5.19`
 - `sudo less /etc/shadow` > copy this text out for at least the pirate account line
