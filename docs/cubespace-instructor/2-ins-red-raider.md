@@ -6,6 +6,37 @@
 
 This solution guide describes the *Red Raider* challenge: how the pirate-attacker system attacks; how challengers can prevent the attack; and, in turn, how challengers can attack the pirate, locate and retrieve the codex, and complete the challenge.
 
+### Before you begin
+
+The in-game mission log requires the team to *Ensure that the file "english.dict" is remotely accessible via anonymous SMB at smb://10.5.5.19:445”*.
+
+Instructions on the Desktop of the `codex-decoder` system mention an `AlienLanguageShare` located at `/home/smb/language`. In this share is a zip file named **Galactic_STD_English_Reference.zip**. In this zip file is the file **english.dict** that must be shared with the pirates.
+
+Check the current settings of the shares in the SMB configuration file at `/etc/samba/smb.cfg`. The `AlienLanguageShare` share is *not* remotely accessible via anonymous SMB because it lists a single valid user and guest access is disabled.
+
+![image 95](img/image95.png)
+
+1. Open the configuration file for editing:	
+
+	```
+	sudo nano /etc/samba/smb.cnf
+	```
+
+2. Modify the lines in the screen print above to match the following by commenting out the valid user and allowing guest access:
+
+	```
+	#valid users = decoder
+	guest ok = yes
+	```
+    
+    After making these changes, save the file by pressing `CTRL-X`, type `Y`, and press `ENTER`.
+
+3. Restart the samba service to apply the changes:
+
+	```
+	sudo systemctl reload smbd
+	```
+
 ## Red Raider attack script
 
 The pirate-attacker VM will take actions against the codex-decoder and through the decoder, the ship-critical-systems. A cronjob activates five minutes after boot that will start off the scripted attack chain.
@@ -29,10 +60,11 @@ The way to prevent this attack is to either disable the policy kit (not recommen
 
 ![image 73](img/image73.png)
 
-Now that the pirate-attacker has a root account on the system, it will attempt to pass an ssh command through the codex-decoder to the ship-critical-systems VM to shutdown and remove all Docker containers.
+Now that the pirate-attacker has a root account on the system, it will attempt to pass an ssh command through the codex-decoder to the ship-critical-systems VM to shutdown and remove all Docker containers. 
 
-The way to prevent this attack would be to block the attacker system at the source/gateway firewall, disable remote Docker commands on the ship-critical-systems VM, disable the pirate account on the codex-decoder, or set up some type of watchdog service to make sure the
-containers stay up.
+This is the outward indication that you have been attacked. This may impact other challenges, such as the *Aurellian Galactic Museum* challenge, that rely on these Docker containers to be running.
+
+The way to prevent this attack would be to block the attacker system at the source/gateway firewall, disable remote Docker commands on the ship-critical-systems VM, disable the pirate account on the codex-decoder, or set up some type of watchdog service to make sure the containers stay up.
 
 ![image 74](img/image74.png)
 
@@ -47,19 +79,26 @@ The easier way - and the way described in this guide - is to discover that the s
 John the Ripper can assist in this. Simply extract the /etc/shadow contents for the pirate account and the /etc/passwd contents for the pirate account from the codex-decoder.
 
 From an operator-terminal you can ssh to the decoder and collect those files:
+
 - `ssh user\@10.5.5.19`
-- `sudo less /etc/shadow`> copy this text out for at least the pirate account line
+- `sudo less /etc/shadow` > copy this text out for at least the pirate account line
 - `sudo less /etc/passwd` > copy this text out for at least the pirate account line
 
-Once you have copies of these files on any operator-terminal system (Kali) and retrieve the wordlist from the ISO mounted to the operator terminals, use unshadow on the files to create a passwords.txt file: `unshadow password.txt shadow.txt > passwords.txt`.
+Once you have copies of these files on any operator-terminal system (Kali) and retrieve the wordlist from the ISO mounted to the operator terminals, use unshadow on the files to create a passwords.txt file:
+
+```
+unshadow password.txt shadow.txt > passwords.txt
+```
 
 Then, use John the Ripper against this file with the wordlist:
 
-`john --wordlist=/path/to/your/wordlist.txt passwords.txt`
+```
+john --wordlist=/path/to/your/wordlist.txt passwords.txt
+```
 
-![image 75](img/image75.png)
+![image 96](img/image96.png)
 
-The screen capture above is only an example. The actual password will be `phantom`. Teams should scan for, and then scan, the running services of the raider-codex-decoder system running at 10.10.10.123 which is running SMB over port 445. Teams will know that the 10.10.10.0/24 space is the operating space based on logs from the attacker's SSH connections.
+Teams should scan for, and then scan, the running services of the raider-codex-decoder system running at 10.10.10.123 which is running SMB over port 445. Teams will know that the 10.10.10.0/24 space is the operating space based on logs from the attacker's SSH connections.
 
 ![image 76](img/image76.png)
 
@@ -69,18 +108,18 @@ Teams can query for the running shares:
 
 ![image 77](img/image77.png)
 
-Connect and get the contents of the Alien Language Share. 
+Connect and get the contents of the shares: 
 
-`smbclient //10.10.10.123/AlienLanguageShare -U pirate`  
+```
+smbclient //10.10.10.123/AlienLanguageShare -U pirate
+```
 
-Enter the recovered password: `phantom`
+```
+smbclient //10.10.10.123/CodexDecoderShare -U pirate
+```
 
-Use **ls** to see the contents of the SMB share. There is a zip file named file_codex_b.zip.
+Lastly, retrieve the pirate codex file:
 
-Retrieve file_codex_b.zip using the command: `get file_codex_b.zip`
-
-![image 78](img/image78.png)
-
-Navigate to where file_codex_b.zip has been downloaded on the workstation. Extract the contents. There are two files. The file pirate-dictionary is CodexB. Upload this file to the Decrypter Workstation to complete the mission.
-
-![image 79](img/image79.png)
+```
+smb: \> get file_codex_b.zip
+```
