@@ -1,4 +1,4 @@
-# Challenge 3 Solution
+# The Ancient Ruins Solution
 
 [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.
 
