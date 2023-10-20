@@ -340,9 +340,7 @@ hide_ids=YES
 
 The ship-critical-systems VM has four docker containers that must be running. Each of the containers is started by a service, with the configurations located in `/etc/systemd/system/`. By default, these containers are started on the same host network, rather than using the best practice of running these containers on their own networks. Users need to modify the configuration files.
 
-Open an operator terminal and ssh to `user@10.5.5.136`.
-
-Enter password: `tartans`.
+Open an operator terminal and ssh to `user@10.5.5.136`. Enter password: `tartans`.
 
 Stop the services:
 
