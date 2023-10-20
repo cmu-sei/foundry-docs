@@ -229,7 +229,7 @@ Generate the Root CA, Intermediate and Server Certificates.
     openssl genrsa -out private/intermediate.cakey.pem 4096
     ```
 
-13. Create the intermediate certificate signing request (CSR). When you run this command you will need to answer a few questions. *Leave the challenge password blank when prompted!* This can cause problems later if the password is not left blank.
+13. Create the intermediate certificate signing request (CSR). When you run this command you will need to answer a few questions. *Leave the challenge password blank when prompted!* This can cause problems later if the password is not left blank. Complete the `commonName` field. This can also cause problems later if not completed.
 
     ```
     openssl req -new -sha256 -config openssl.cnf -key private/intermediate.cakey.pem -out csr/intermediate.csr.pem
