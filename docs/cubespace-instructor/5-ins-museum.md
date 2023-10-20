@@ -342,6 +342,8 @@ The ship-critical-systems VM has four docker containers that must be running. Ea
 
 Open an operator terminal and ssh to `user@10.5.5.136`.
 
+Enter password: `tartans`.
+
 Stop the services:
 
 ```
