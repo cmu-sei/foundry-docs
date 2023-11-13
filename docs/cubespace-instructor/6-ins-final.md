@@ -205,7 +205,7 @@ Edit the extractor.csproj file, adding the following values inside the element.
     </ItemGroup>
 ```
 
-Save and close the extractor.csproj file.
+Save and close the **extractor.csproj** file.
 
 Make sure you are in the correct directory (where the .csproj file is located). Run the following command in the VS Code terminal window:
     
