@@ -2,7 +2,7 @@
 
 [DISTRIBUTION STATEMENT A] This material has been approved for public release and unlimited distribution.
 
-## Registration and Enrollment
+## Registration and Enrollment 2024
 
 1. Access to the video game will depend on whether you are a federal/military employee or taking part in a workshop where accounts are being provided to you.
     
