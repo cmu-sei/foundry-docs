@@ -53,6 +53,16 @@ The table below explains the fields in the VM template.
 | Linked          | *Unlinking* creates a new a new copy of the template that can be saved and customized. Toggle **Unlink** for any virtual machine that will not use the default disk included with the template. |
 | Delete Template | Deletes the template.                                        |
 
+#### Guest Settings
+
+The **Guest Settings** field uses VMware Guest Info Variables to inject content into virtual machines. Key/value pairs are placed here. The *key* is the name of the guest variable you want to define, and the *value* is value, information, setting, of the variable.  In the following example, we have a guest setting named “var1” with a value of “test”: 
+
+`var1=test`
+
+*Transforms* allow you to define dynamic variables that are generated based on certain criteria or types. To add the concept of transforms here, select **Challenge** and see **Transforms**. The **info** icon in the Transforms section describes the transform types that are available. 
+
+See also the "Transforms" topic [here](challenge.md/#transforms).
+
 ### Refresh and Deploy
 
 ![refresh-deploy](img/refresh-deploy.png)

@@ -4,6 +4,28 @@ The **Challenge** page in the Topo workspace is used when both Gameboard and Top
 
 ## Transforms
 
+*Transforms* allow you to define dynamic variables that are generated based on certain criteria or types. Transforms are also a key/value pair definition – the *key* is the name of your transform and the *value* is the type of the transform.  The screen print below shows a transform named “token1” that will have a value of 8 random hexadecimal characters. 
+
+*Screen print 1:*
+
+![transforms](img/transforms.png)
+
+To access transforms, use the referenced "*double-pounder-key* (`##key##`)" notation. When TopoMojo deploys a gamespace, the engine generates the random values for all transforms, looks for double-pounder-keys, then replaces them with the randomly generated values for that deployment.
+
+Any of the sections on the Challenge tab (e.g., Transforms, Markdown, Questions, Answers) can contain *double-pounder-keys* that will be replaced with transform values at deploy time. You can also use transform *double-pounder-keys* in the **Guest Settings** field of a template to inject random variables into VM guest info variables when deploying a gamespace (transforms aren’t generated when deploying workspace VMs, so the value of the variable will be the *double-pounder-key*). 
+
+The screen print below shows the Guest Settings of a VM template configured to use two guest info variables: `var1` and `token1`. `Var1` has a value of “test” and `token1` will have a random 8-character hexadecimal string assigned when a gamespace is deployed. 
+
+*Screen print 2:*
+
+![guest-settings](img/guest-settings.png)
+
+Guest info variables can be accessed from a Gamespace VM by using VMware Tools such as `open-vm-tools`and the `vmtoolsd` command. See [Open VM Tools](https://docs.vmware.com/en/VMware-Tools/12.3.0/com.vmware.vsphere.vmwaretools.doc/GUID-8B6EA5B7-453B-48AA-92E5-DB7F061341D1.html) and [VMware Tools daemon help](https://helpmanual.io/help/vmtoolsd/).
+
+*Screen print 3:*
+
+![vm-ware-tools](img/vm-ware-tools.png)
+
 ## Markdown
 
 ## Variants
