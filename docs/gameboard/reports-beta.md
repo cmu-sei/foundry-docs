@@ -5,9 +5,11 @@ As of v3.10.0, Gameboard features a beta version of an overhauled **Reports** mo
 !!! note
     The existing Reports functionality has not been deprecated; reports are still available under **Admin**, **Reports**, **User Reports**, **Board Reports**, etc. 
 
-Three report "cards" display the three reports available in beta:
+Five report "cards" display the three reports available in beta:
 
+- **Challenges Report:** View information about the challenges configured in the Gameboard app. This report is good for site utilization metrics related to challenges, challenge deploys, and challenge solves.
 - **Enrollment Report:** View a summary of player enrollment data; who enrolled when, which sponsors do they represent, and how many played challenges.
+- **Players Report:** View data on player activity. A “player” is a person with an account on the Gameboard site (i.e., a "user").
 - **Practice Area Report:** View metrics on players who are spending free time honing their skills in Gameboard. See which challenges are practiced most, have the best success rates, and which players are accessing the Gameboard to complete challenges in practice.
 - **Support Report:** View a summary of support tickets created in Gameboard; including ticket creation and assignment details, ticket categories, and tickets attached to games/challenges .
 
@@ -40,3 +42,59 @@ Click **300** to view the detailed information that comprises score in the summa
 ![score detailed](img/breakdown.png)
 
 In this view, the challenges and scores this player achieved are displayed. Now, you can see the details that make up the score.
+
+## Challenges Report
+
+The **Challenges** report answers questions like these:
+
+1. How many different challenges are configured?
+2. How many competitive challenges have been deployed?
+3. How many practice area challenges have been deployed?
+4. What are the most popular competitive/practice mode challenges?
+
+## Enrollment Report
+
+The **Enrollment** report shows information about players who are enrolled in competitive-mode games on the Gameboard. You can filter this report to show enrollment numbers for each game. You can filter this report to only show information about challenges from specific games and seasons. You can also filter this report by Sponsor. 
+
+The screen print below shows a summary of a typical game. The summary shows:
+
+1. 1390 different players (people, “users”, with an account in Gameboard) enrolled in our example game. The Department of Defense, the Leading Sponsor, leads enrollment with 1069 players enrolled.
+2. Those 1390 players created 1422 teams.
+
+   - The number of teams is higher than the number of players here because some people played in more than one “track” of the competition. Therefore, they have more than one “team” attached to one player/person/user.
+   - This number can also be higher than the number of players if the competition contains several rounds. So, if your filters are looking at a Round 1 and a Round 2, there are some teams in both and counted twice.
+
+3. 25 different sponsors participated in this example game.
+
+Screen print 3: Sample Enrollment report
+
+![sample enrollment](img/sample-enroll-report.png)
+
+## Players Report
+
+The **Players** report is good for viewing site utilization metrics. This report answers questions like these:
+
+1. How many users does the site have?
+2. How many users have deployed competitive and practice area challenges?
+3. How many users have achieved a full solve on at least one competitive and/or practice area challenge?
+
+You can also filter the Players report by *Account Creation Date* to understand when players create accounts. For example, it may be useful for you to know many users created an account since January 1, 2024 (or any date you prefer).
+
+## Practice Area Report
+
+The **Practice Area** report answers questions like these:
+
+1. How many practice challenges have been deployed?
+2. How many practice challenges achieved a full solve?
+3. How many different challenges have been deployed via the practice area?
+4. How many users have deployed a practice challenge?
+5. How many different sponsors have deployed a practice challenge?
+
+## Support Report
+
+The **Support** report displays information about support tickets. Filter tickets by label, creation date and time, challenge, etc. The Support report answers questions like these:
+
+1. How many support tickets did we receive regarding the challenge titled "The Best Challenge"?
+2. How many tickets with a specific label did we receive?
+3. How many tickets did we receive on Tuesday?
+4. How many tickets did we receive during PC5 Teams Round 1?

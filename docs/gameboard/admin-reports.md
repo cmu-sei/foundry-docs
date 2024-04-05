@@ -1,5 +1,9 @@
 # Reports
 
+If you came to the **Reports** module through the Admin menu in the top navigation bar, please note that you are looking at the *old* Reports module. The old Reports module remains visible for now, but it won’t get future fixes or enhancements. We are maintaining it (and this help documentation!) in the short term so we can make sure we can answer all the same questions in the new Reports as we could in the old Reports.
+
+For the best Gameboard reporting experience and access to the latest reports, we recommend transitioning to the new [BETA] Reports module. In the top navigation bar, click **Reports [BETA]**. To read the docs, click [here](reports-beta.md).
+
 ## User Reports
 
 **Export User or Player Report to CSV:** Allows you to export user or player statistics depending upon which icon you select as a comma-separated values file. From the .csv file, you can perform more detailed analysis.
