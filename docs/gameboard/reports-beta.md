@@ -5,7 +5,7 @@ As of v3.10.0, Gameboard features a beta version of an overhauled **Reports** mo
 !!! note
     The existing Reports functionality has not been deprecated; reports are still available under **Admin**, **Reports**, **User Reports**, **Board Reports**, etc. 
 
-Five report "cards" display the three reports available in beta:
+Five report "cards" display the five reports available in beta:
 
 - **Challenges Report:** View information about the challenges configured in the Gameboard app. This report is good for site utilization metrics related to challenges, challenge deploys, and challenge solves.
 - **Enrollment Report:** View a summary of player enrollment data; who enrolled when, which sponsors do they represent, and how many played challenges.
