@@ -20,11 +20,7 @@ The screen print below shows the Guest Settings of a VM template configured to u
 
 ![guest-settings](img/guest-settings.png)
 
-Guest info variables can be accessed from a Gamespace VM by using VMware Tools such as `open-vm-tools`and the `vmtoolsd` command. See [Open VM Tools](https://docs.vmware.com/en/VMware-Tools/12.3.0/com.vmware.vsphere.vmwaretools.doc/GUID-8B6EA5B7-453B-48AA-92E5-DB7F061341D1.html) and [VMware Tools daemon help](https://helpmanual.io/help/vmtoolsd/).
-
-*Screen print 3:*
-
-![vm-ware-tools](img/vm-ware-tools.png)
+Click [here](building-a-workspace.md/#template-field-definitions) to learn more about Guest Settings.
 
 ## Markdown
 

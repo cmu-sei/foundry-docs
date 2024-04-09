@@ -47,13 +47,16 @@ To award bonus points manually:
 
 ### Unenroll and Reset Session
 
-In the Player view context menu (the "three vertical dots") you'll notice two different menu items: **Unenroll** or **Reset Session**. Which item you see for the player depends on whether the player has started a game session or not. Only users with the `Registrar` or `Admin` roles can unenroll players or reset their sessions.
+In the Player view context menu (the "three vertical dots") you'll notice four different menu items: **Unenroll** or **Reset Session (Preserve Challenge)**, **Reset Session**, and **Reset Session & Unenroll**. Which item you see depends on whether the player or team has started a game session or not. Only users with the `Registrar` or `Admin` roles can unenroll players/teams or reset their sessions.
+
+![reset unenroll](img/context-reset.png)
 
 !!! info
-
         A "session" is when a game is started and challenges can be deployed and solved.
 
-- **Unenroll**: If a player has registered, but has not started a session, you can *unenroll* them from the game. They will need to re-enroll to play again.
-- **Reset Session:** If a player has registered, and has started playing the game (i.e., they have a game session), you can reset their session. *Reset session* ends their current session and unenrolls them from the game. All record of the session is deleted, including challenge data. If they wish to play again, they'll need to re-enroll and start a new session.
+- **Unenroll:** If a player has registered, but has not started a session, you can *unenroll* them from the game. They will need to re-enroll to play again.
+- **Reset Session (Preserve Challenges):** If a player has registered, and has started playing the game (i.e., they have a game session), you can reset their session *and not* archive any challenges, started or completed. Use of this option should be limited to very specific situations like testing and QA. 
+- **Reset Session:** If a player has registered and has started playing the game (i.e. they have a game session), you can reset their session. This deletes any challenge data they generated while playing but, leaves enrollment and team membership intact. If they wish to play again, they'll need to start a new session.
+- **Reset Session & Unenroll:** If a player has registered, and has started a session, you can *reset* their session and *unenroll* them from the game. Players will need to re-enroll to play again. Teams are essentially dissolved and will need to reform and re-enroll to play. This is the same functionality as when a player unenrolls from the game lobby or resets their session (when enabled by an admin).
 
-Players can also unenroll themselves from the game lobby or reset their session if the admin setting Allow Reset is set to Allowed for their game. For the player perspective, see: [Participating in a game](participating.md).
+Players can also unenroll themselves from the game lobby or reset their session if the admin setting **Allow Reset** is set to **Allowed** for their game. For the player perspective, see: [Participating in a game](participating.md).
