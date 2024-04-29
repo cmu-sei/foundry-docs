@@ -24,6 +24,23 @@ You must have the Admin Role to get to the Players screen in a game. Assuming yo
 
 ### View Data
 
+### Player Timeline
+
+The **Player Timeline** is a visual representation of the sequence of session events distributed chronologically along a line. It shows the order and timing of game occurrences where events have dates and times. Events on the timeline are clickable and open a modal dialog showing extra information about the event. The **Gamespace On** event is not clickable.
+
+Events seen on the player timeline are:
+
+- **Challenge Started:** Shows when (date and time) a challenge has been launched. 
+- **Gamespace On:** Shows when a gamespace was activated. This event is not clickable.
+- **Challenge Completed:** Shows when a challenge has been completed and includes the number of attempts used and final score.
+- **Submission:** Shows when a token or answer has been submitted and includes the number of attempts used, points awarded after the attempt, and any submitted answers.
+
+!!! tip
+
+	Selecting one of the blue buttons removes that type of event from the player timeline. If you only wanted to see Submissions, for example, you could remove the other event types.
+
+![player timeline](img/timeline.png)
+
 ### Manage Challenge Bonuses
 
 Users who have the `Admin` role can manually add points to a player or team score in the context of a challenge. This is useful if bonus points were earned during a challenge and needed to be added.
