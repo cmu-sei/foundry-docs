@@ -37,7 +37,7 @@ Events seen on the player timeline are:
 
 !!! tip
 
-	Selecting one of the blue buttons removes that type of event from the player timeline. If you only wanted to see Submissions, for example, you could remove the other event types.
+	Selecting one of the blue buttons removes that type of event from the player timeline. If you only wanted to see **Submissions**, for example, you could remove the other event types.
 
 ![player timeline](img/timeline.png)
 

@@ -17,6 +17,32 @@ This **Search** feature allows game administrators to search on the *name* of th
 
 ## Toggle Cards and Table
 
+<!-- 5/6/2024 updates starting here.-->
+
+## Administration tabs
+
+### Overview
+
+#### Live Stats
+
+The **Admin Overview** tab allows game administrators to click **Live Stats** (e.g., the number of *Active Competitive Challenges* deployed, the number of *Active Practice Challenges* deployed, etc.). *Registered Users* is not clickable at this time.
+
+#### Send Announcement
+
+The **Announcement** feature allows game administrators to broadcast important messages to all participants within a game. Among other uses, these could be messages regarding gameboard issues, challenge issues, and changes to logistics. 
+
+In the Announcement field, enter the content of the announcement and click **Announce**.
+
+### Games (landing page)
+
+The **Games** tab is where you land when you click **Admin** in the menu. See the topics above: *Search*, *Toggle Cards and Table*, *New Game*, and *Game Card Hover*.
+
+### Practice Area
+
+See the help documentation on [Administering the Practice Area](admin-practice-area.md).
+
+<!-- Testing some new content. Still 5/6/2024 stuff. -->
+
 ## Announcement
 
 The **Announcement** feature allows game administrators to broadcast important messages to all participants within a game. Among other uses, these could be messages regarding gameboard issues, challenge issues, and changes to logistics. Announcements appear in the bottom of the gameboard  interface. 

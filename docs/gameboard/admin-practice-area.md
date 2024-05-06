@@ -8,6 +8,8 @@ The text here appears on the Practice Area page and introduces players to the Pr
 
 More information about Markdown, including the syntax guide, can be found at [markdownguide.org]().
 
+## Suggested Searches
+
 ## Certificate Template
 
 Admins configure the certificate template here by entering HTML into the **Certificate Template** field. Players save certificates in PDF format for each practice challenge they fully complete. More information on certificates can be found in the [Playing in the Gameboard](./participating.md) documentation under "The Profile screen" heading.
