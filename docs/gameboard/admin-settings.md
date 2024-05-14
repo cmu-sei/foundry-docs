@@ -9,15 +9,15 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 ## Metadata
 
+**Name:** The title of your game. Displayed in the game lobby and on the scoreboard.
+
 **Publish:** Toggle *Hidden* or *Visible* to make the game visible to players on the Home screen.
 
 !!! info
-   
+
     When a game is hidden, a user with permissions that can view both hidden and visible games -- such as Designer or Tester -- will see the game card on the Home screen; however, the game card appears with an "eye-slash" icon to denote that it is hidden.
 
 **Key:** A short, unique key distinguishing *this* event.
-
-**Name:** The title of your game. Displayed in the game lobby and on the scoreboard.
 
 **Series:** The name of the series; perhaps the same event is run annually making it a *series*.
 
@@ -27,19 +27,37 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 **Division:** The tier or level of the audience participating in the event. Is this for working professionals or just students?
 
-**Mode:** Specify the game mode (VM, Unity, off-line). In VM mode, the gameboard reaches out to TopoMojo to start the VMs. If you have a game of challenges that doesn't require the use of VMs, off-line mode can be used. 
-
-**Lobby Markdown:** Using Markdown enter any information you would like players to see when they enter the game lobby. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
-
-**Feedback Questions:** It's possible -- but not required -- to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](admin-feedback-form.md).
-
-**Card Image:** Upload an image to become game tile or card to identify your game in the lobby. This can 
+**Card Image:** Upload an image to become game tile or card to identify your game in the lobby.
 
 **Card Text Top:** Enter text that will appear superimposed on your card at the top.
 
 **Card Text Middle:** Enter text that will appear superimposed on your card in the middle.
 
 **Card Text Bottom:** Enter text that will appear superimposed on your card along the bottom.
+
+**Lobby Markdown:** Using Markdown enter any information you would like players to see when they enter the game lobby. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
+
+**Feedback Questions:** It's possible -- but not required -- to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](admin-feedback-form.md).
+
+**About feedback templates:** 
+
+**Paste Example Configuration:**
+
+**Certificate Template:**
+
+## Modes
+
+**Player Mode:** Toggle to set the game to **Competition** or **Practice**. When at least *one* game is set to Practice in your environment, a link to Practice is visible in the top-right corner of gameboard for authenticated players. Players can click the Practice link and select a challenge start their practice session.
+
+**Require Synchronized Start:** Toggle on to require the game to have a synchronized start. When enabled, no player can start a session until *all* players have indicated that they are "ready to play" in the game lobby. Use this feature for games when you want all players to start at the same time and end at the same time. Synchronized start adheres to other gameboard settings: for example, team size minimum and maximum.
+
+!!! note
+
+    The Admin Start feature bypasses the "ready to play" feature; that is, users assigned the `Admin` role can Admin Start regardless of whether all players have "readied up" or not.
+
+**Show On Homepage When In Practice Mode:** 
+
+**Engine Mode:** Specify the game mode (Standard, External, Legacy Unity Games). In VM mode, the gameboard reaches out to TopoMojo to start the VMs.
 
 ## Settings
 
@@ -63,17 +81,11 @@ These settings pertain to registration, execution, and general game and challeng
 
 **Allow Reset:** Toggle *Forbidden* or *Allowed* to permit participants to restart their game and attempt challenges again. This option is generally allowed on a "practice" game since that game is meant to help users get their bearings on how a competition works; however, you may decide players will be forbidden to reset an "official" game.
 
-**Player Mode:** Toggle to set the game to **Competition** or **Practice**. When at least *one* game is set to Practice in your environment, a link to Practice is visible in the top-right corner of gameboard for authenticated players. Players can click the Practice link and select a challenge start their practice session.
+**Allow Late Starts:**
 
-**Require Synchronized Start:** Toggle on to require the game to have a synchronized start. When enabled, no player can start a session until *all* players have indicated that they are "ready to play" in the game lobby. Use this feature for games when you want all players to start at the same time and end at the same time. Synchronized start adheres to other gameboard settings: for example, team size minimum and maximum.
-
-!!! note
-
-    The Admin Start feature bypasses the "ready to play" feature; that is, users assigned the `Admin` role can Admin Start regardless of whether all players have "readied up" or not.
+**Allow Public Scoreboard Access:**
 
 ### Registration
-
-#### Open
 
 Offering a different execution period from registration period is an option. This gives participants the opportunity to register for a period of time prior to round one of the competition getting underway. No need for a registration period for later rounds where a competitor would have had to qualify for the next round to even continue.
 
@@ -87,36 +99,21 @@ Offering a different execution period from registration period is an option. Thi
 
 **Registration Markdown:** Using Markdown enter any information you would like players to see when they register for the game. For help with Markdown syntax, see this [Markdown Guide](https://www.markdownguide.org/).
 
-## Map
+## Challenges
 
-Here is where the visual representation of the game is arranged.  Challenges are searched for and placed on the game map here. To build a game map:
+**Search:**  Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo.
 
-!!! warning
+**Edit:** Selecting a challenge from the search results adds it to the Edit icon.
 
-      Assuming that you have a correctly deployed instance of TopoMojo and have logged into Gameboard with the appropriate role.
+**Map:** Here is where the visual representation of the game is arranged.  Challenges are placed on the game map here. The challenges you selected appear as hotspots on the map. Drag them into position on the map.
 
-1. Click **Admin**, hover over a game card, then click **Settings**.
-2. Under Map, click **Search**.
-3. In the Search field, enter your challenge search term.
-4. In the results, select the challenge or challenges.
-5. Select **Edit**, enter **Support Keys** and assign **Points**.
-6. Select **Map**.  The challenges you selected appear as hotspots on the map. Drag them into position on the map.
+**Show Grid:** Each map has a grid. By selecting Show Grid, you can toggle displaying the grid. When enabled, the grid overlays the map image and makes it easier for you place your challenge hotspots. 
 
-*The Edit icon tells you how many challenges you have selected.*
+**Browse:** Select **Browse** to search for an image that will serve as a backdrop to your map.
 
-![map-edit](img/map-edit.png)
-
-### Search
-
-Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo.
-
-Selecting a challenge from the search results adds it to the Edit icon.
-
-### Edit
+**Reset:** Removes the image from your map. Reset does not remove challenge hotspots. 
 
 #### Challenge Specs
-
-**Disabled:** Check to disable this challenge in the game without deleting it.
 
 **Sync with Source:** Synchronizes the Gameboard challenge markdown guide with the TopoMojo challenge markdown guide so that the content is the same in both apps.
 
@@ -124,14 +121,22 @@ Selecting a challenge from the search results adds it to the Edit icon.
 
 **Points:** Assign a point value to your challenge here.
 
-#### Prerequisites
+**Solution Guide URL:** 
+
+**Disabled:** Check to disable this challenge in the game without deleting it.
+
+**Show Solution Guide in Competitive Mode:**
+
+**Hidden:**
+
+**Remove This Challenge:** Removes the challenge from the game.
+
+##### Prereqs
 
 Prerequisites are for challenges that unlock other challenges. For example: Your game has two challenges tagged **c01** and **c02**. You want to force participants to score 500 points on c01 before c02 is unlocked for them to attempt. Challenge c02 will not be available to deploy until the prerequisite condition is met. Complete the fields so that `c02 requires 500 on c01`.
 
-### Map
+##### Automatic Bonuses
 
-**Show Grid:** Each map has a grid. By selecting Show Grid, you can toggle displaying the grid. When enabled, the grid overlays the map image and makes it easier for you place your challenge hotspots. 
+**Paste this example configuration:**
 
-**Browse:** Select **Browse** to search for an image that will serve as a backdrop to your map.
-
-**Reset:** Removes the image from your map. Reset does not remove challenge hotspots.
+**Import this configuration:**
