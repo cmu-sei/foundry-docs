@@ -32,7 +32,7 @@ A *variant* describes a different version of a challenge. Variants can contain d
 
 ## Question Set
 
-**Move Up, Move Down, Remove:** These functions are self-explanatory. Use them to position the question in the sequence of questions for that set and remove it.
+**Move Up, Move Down, Remove:** These functions are self-explanatory. Use them to position the question in the sequence of questions for that set or remove it.
 
 **Question:** Enter the question you expect the participant to answer here. Your question should be specific, so that there is only one correct answer.
 
