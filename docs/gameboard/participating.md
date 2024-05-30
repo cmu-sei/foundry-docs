@@ -1,4 +1,4 @@
-# Playing in the Gameboard
+# Participating in a Game
 
 This topic describes the Gameboard from a participant's point-of-view. A *participant* is a player in a game or a competitor in a competition who has no special role(s) attached them. These instructions assume that a fully configured game environment is available to the reader and they have an account on the Identity server.
 
@@ -11,6 +11,10 @@ This topic describes the Gameboard from a participant's point-of-view. A *partic
 
 ## The Profile screen
 
+**Display Name:** Set a default name for public display that is suitable for all audiences. This name will apply to all new games, however, you can customize it during registration.
+
+**Sponsoring organization:** Select *your* organization. Gameboard admins define who the sponsors are and what image to associate with each.
+
 **Certificates:** View and print a certificate as proof of participation. This feature allows players to provide a record of achievements to friends, colleagues, and organizations to validate professional development time. Select **Competitive** to find and print certificates which validate player performance in a *game*. Select **Practice** to find and print certificates which validate player performance in a *practice challenge*. You can also save them as PDFs. 
 
 - **Publish/Unpublish:** Optionally "publish" a certificate on a per-certificate basis. Players can send the link to the certificate to anyone including non-Gameboard users. Players can "unpublish" a certificate at any time removing access to the certificate.
@@ -18,9 +22,11 @@ This topic describes the Gameboard from a participant's point-of-view. A *partic
 
 **History:** View game history, including where you finished on the scoreboard and whether it was in practice or competition.
 
-**Display Name:** Set a default name for public display that is suitable for all audiences. This name will apply to all new games, however, you can customize it during registration.
+**Settings:** 
 
-**Sponsoring organization:** Select *your* organization. Gameboard admins define who the sponsors are and what image to associate with each.
+Users with the appropriate permissions (`Support` and `Admin`) may opt to receive browser notifications when support tickets are opened, closed, and updated. Users can choose to play an audio alert when a browser notification is received. 
+
+Browser notifications are subject to OS-level settings which may need to be changed and browser site settings for pop-ups and redirects which need to be allowed.
 
 ## The Home screen
 
@@ -47,7 +53,7 @@ If the game is a team game, you organize your team in the game lobby. Under **Se
 To start your session, click **Start Session** and click through the confirmation messages.
 
 !!! warning
-    For team players, make sure your teammates are ready to start. You can't add or remove team members after your session has started. Also note that *any* team member can start a session -- the continuous session timer starts when **Start Session** is clicked.  
+    For team players, make sure your teammates are ready to start. You can't add or remove team members after your session has started. Also note that *any* team member can start a session -- the continuous session timer starts when the final **Confirm** button is clicked.  
 
 ## Starting a challenge
 

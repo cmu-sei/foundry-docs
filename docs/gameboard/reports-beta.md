@@ -1,17 +1,17 @@
-# Reports [BETA]
+# Reports
 
-As of v3.10.0, Gameboard features a beta version of an overhauled **Reports** module. The new beta Reports module is available to users who have `Admin`, `Registrar`, or `Support` roles in the main navigation bar.
-
-!!! note
-    The existing Reports functionality has not been deprecated; reports are still available under **Admin**, **Reports**, **User Reports**, **Board Reports**, etc. 
-
-Five report "cards" display the five reports available in beta:
+The **Reports** module is available to users who have `Admin`, `Registrar`, or `Support` roles in the main navigation bar. Six report "cards" display available reports:
 
 - **Challenges Report:** View information about the challenges configured in the Gameboard app. This report is good for site utilization metrics related to challenges, challenge deploys, and challenge solves.
 - **Enrollment Report:** View a summary of player enrollment data; who enrolled when, which sponsors do they represent, and how many played challenges.
 - **Players Report:** View data on player activity. A “player” is a person with an account on the Gameboard site (i.e., a "user").
 - **Practice Area Report:** View metrics on players who are spending free time honing their skills in Gameboard. See which challenges are practiced most, have the best success rates, and which players are accessing the Gameboard to complete challenges in practice.
-- **Support Report:** View a summary of support tickets created in Gameboard; including ticket creation and assignment details, ticket categories, and tickets attached to games/challenges .
+- **Site Usage Report:** View a high-level overview of user activity in the Gameboard. This report, optionally filtered by date range and sponsor, offers a digestible view of data related to players, sponsors, and challenges. Each statistic within the report contains a modal view for more detailed information. Note that the Site Usage Report can't be exported. 
+- **Support Report:** View a summary of support tickets created in Gameboard; including ticket creation and assignment details, ticket categories, and tickets attached to games/challenges.
+
+## Legacy Reports
+
+The legacy reporting functionality has not yet been deprecated; these reports are still available at the bottom of the Reports screen. Legacy reports won’t get future fixes or enhancements. Eventually, they will be removed from the Gameboard application.
 
 ## Common report characteristics
 
@@ -29,7 +29,7 @@ Each report shares common characteristics.
 
 ## Drilling down in results
 
-In some places in the report results, you can "drill down" by clicking a link in the metrics. A popup window displays a more granular view within the same data. For example: in the Enrollment Report, in the Performance category, some data points are links. See *screen print 1* below. Clicking that link goes deeper into that element. See *screen print 2* below.
+In some places in the report results, you can "drill down" by clicking a link in the metrics. A modal window displays a more granular view within the same data. For example: in the Enrollment Report, in the Performance category, some data points are links. See *screen print 1* below. Clicking that link goes deeper into that element. See *screen print 2* below.
 
 *Screen print 1: Summary Table*
 
@@ -89,6 +89,15 @@ The **Practice Area** report answers questions like these:
 3. How many different challenges have been deployed via the practice area?
 4. How many users have deployed a practice challenge?
 5. How many different sponsors have deployed a practice challenge?
+
+## Site Usage Report
+
+The **Site Usage** report answers questions like these:
+
+1. How many players are active in the Gameboard in a given period of time?
+2. How many active players are associated with different sponsors?
+3. How many players are competitive players versus how many players are practice-only players?
+4. How many unique challenges versus how many total challenges were attempted in a given period of time?
 
 ## Support Report
 

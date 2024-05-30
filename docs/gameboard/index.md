@@ -1,6 +1,6 @@
-# Gameboard Docs
+# About the Gameboard
 
-Developed by Carnegie Mellon University's [Software Engineering Institute](github.com/cmu-sei) (SEI), Gameboard is a flexible web platform that provides game design capabilities and a competition-ready user interface. *Gameboard Docs* explains how to implement it when you want to run your own cybersecurity game.
+Developed by Carnegie Mellon University's [Software Engineering Institute](github.com/cmu-sei) (SEI), Gameboard is a flexible web platform that provides game design capabilities and a competition-ready user interface. The *Gameboard * explains how to implement it when you want to run your own cybersecurity game.
 
 ## Gameboard concepts
 
@@ -11,11 +11,3 @@ Developed by Carnegie Mellon University's [Software Engineering Institute](githu
 *Participated* vs. *played*:  These terms are interchangeable -- a user who has enrolled in a game and launched a challenge has participated or played.
 
 *Sponsor*: Describes the organization a player is associated with. In a government-sponsored competition like the President's Cup, a sponsor may be a department (e.g., Department of Homeland Security, Department of Defense). In a school-sponsored competition, you may choose to have different universities represented as sponsors (e.g., Carnegie Mellon University, University of Pittsburgh).
-
-<!--## Gameboard concepts
-
-*Registering* is when...
-
-*Enrolling* is when...
-
-A *session* is when a player ... -->

@@ -1,4 +1,4 @@
-# Competition Support feature
+# Using the Integrated Support feature
 
 The gameboard platform comes with a built-in customer support interface so that competition hosts and administrators can assist competitors and players. This way, Gameboard is a "one-stop shop" and no outside apps or systems are required to track and measure issues reported by participants.
 
@@ -8,7 +8,7 @@ You must have either the `Support` role or `Admin` role to use the support featu
 
 ### Creating new support ticket
 
-From either of these locations <!--Once I see it in Launchpad, I can add more detail here-->, click **Create Ticket**. If you are coming from the challenge screen, then the Support Code, player id, and challenge id are automatically generated; if you are not, then this information can be added later.  
+You can create tickets from two places: the *Support* page or a challenge screen. In both cases you click the blue **Create Ticket** button to get started. If you are coming from the challenge screen, then the Support Code, player id, and challenge id are automatically generated; if you are not, then this information can be added later.  
 
 In the **Summary**, enter a brief statement of the problem.
 
@@ -23,23 +23,24 @@ After submitting the ticket, you can always **add a comment** and attach another
 ### Finding an existing ticket
 
 From the Support page, use the dropdowns and the **Search** field to locate existing tickets. Filter tickets by status:
-- Any and All
+
+- Any Status
 - Open
 - In progress
-- Not closed (*open* plus *in progress*)
+- Not Closed (*Open* plus *In Progress*)
 - Closed  
 
-Filter by assigned to you, unassigned, and assigned to anyone.
+Filter by *Assigned to me*, *Unassigned*, and *Any Assignment*. Finally, you can also *filter by labels*.
 
-Search by entering terms. Search covers ticket summary, labels, challenge titles, and player name. 
+Search by entering terms. Search covers ticket description, label, user, challenge title, and player.
 
 ## Support from the Support role point-of-view 
 
-Click the links at the top to instantly jump to challenge details, player details, and game details. <!--I'll add more detail here, too, when I can see and test.-->
+Click the links in the ticket header to instantly jump to the submitter's *Game* and *Challenge* details.
 
 ### Creating new support ticket
 
-The procedure for support role staff to create a tickets is very similar to procedure for participants to create a ticket (see above). However, after a ticket has been created users with the support staff role have more options to manage the tickets.  
+The procedure for support staff (i.e., users given the `Support` role) to create a tickets is very similar to procedure for participants to create a ticket (see above). However, after a ticket has been created users with the `Support` role have more options to manage the tickets.  
 
 ### Managing support tickets
 
@@ -61,10 +62,10 @@ From the Ticket management side-bar:
 
 Add a **comment** to communicate with the participant.
 
-### Copy ticket to markdown
+### Copy to markdown
+
+The **Copy to markdown** icon allows you to copy support ticket content to Markdown. You can paste it anywhere, including into a messaging app or email, with nicely formatted text, avoiding the need for links or logins to the Gameboard.
 
 ## Support-related Reporting
 
-<!--This will change for sure. Just don't want to forget about writing this. If it is brief enough, I may include it in my Admin settings doc.-->
-
-Some support-related reporting is provided in Gameboard to provide you with a way to track trends, manage workloads, and track trends during your competition. In the top-right corner, select **Admin**. Then click **Reports**, and **Support Reports**.
+Support-related reporting provides you with a way to manage workloads and track trends during your competition. In the main menu, select **Reports**. Then click **Support** in the Reports screen.

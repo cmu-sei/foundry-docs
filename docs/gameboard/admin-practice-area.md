@@ -10,11 +10,17 @@ More information about Markdown, including the syntax guide, can be found at [ma
 
 ## Suggested Searches
 
+Suggested searches appear on the Practice Area homepage just below the greeting and direct players to useful or interesting subsets of available practice challenges. These searches act as filters for tags attached to a challenge. (When a challenge is created, the developer can optionally add tags that describe the skills needed to solve the challenge.)
+
+Only tags that match the suggested searches are displayed to the player when browsing the Practice Area. This ensures players see relevant tags that help them find the challenges they are interested in.
+
+To enter suggested searches, list one search term per line.
+
 ## Certificate Template
 
 Admins configure the certificate template here by entering HTML into the **Certificate Template** field. Players save certificates in PDF format for each practice challenge they fully complete. More information on certificates can be found in the [Playing in the Gameboard](./participating.md) documentation under "The Profile screen" heading.
 
-For your convenience, here are several variables you can include in your template to display information about the player's performance on a practice challenge.
+For your convenience, here are several variables you can include in your template to display information about the player's performance on a practice challenge. 
 
 - `{{playerName}}`: The player's approved username
 - `{{score}}`: The player's score on the challenge
@@ -23,6 +29,8 @@ For your convenience, here are several variables you can include in your templat
 - `{{season}}`: The season the challenge was originally played in competitive mode
 - `{{track}}`: The track the challenge was originally placed in competitive mode
 - `{{time}}`: The amount of time the player spent solving the challenge
+
+Additional information about using these variables can be found by clicking the *How do I create a certificate template?* link.
 
 ## Session Limits
 
