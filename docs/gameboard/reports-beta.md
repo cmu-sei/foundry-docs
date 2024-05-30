@@ -95,7 +95,7 @@ The **Practice Area** report answers questions like these:
 The **Site Usage** report answers questions like these:
 
 1. How many players are active in the Gameboard in a given period of time?
-2. How many active players are associated with different sponsors?
+2. How many sponsors had active players and how many players represented each?
 3. How many players are competitive players versus how many players are practice-only players?
 4. How many unique challenges versus how many total challenges were attempted in a given period of time?
 
