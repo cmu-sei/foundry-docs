@@ -135,4 +135,4 @@ You can **edit** and **delete** notifications from the list.
 
 ###  Reports
 
-Use the new Reports feature. See the [Beta Reports](reports-beta.md) documentation.
+Use the Reports feature. See the [Reports](reports-beta.md) documentation for additional help.
