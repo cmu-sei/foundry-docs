@@ -17,7 +17,7 @@ The legacy reporting functionality has not yet been deprecated; these reports ar
 
 Each report shares common characteristics. 
 
-- **Filter controls:** Dedicated filter controls allow users to narrow down or restrict the data displayed on a report. For example, if you're interested in seeing enrollments from a given sponsor in the Enrollment Report, use the **Sponsors** filter to select the sponsor(s) you're interested in. If you don't select any values in a filter, all data from that filter included in the results.
+- **Filter controls:** Dedicated filter controls allow users to narrow down or restrict the data displayed on a report. For example, if you're interested in seeing enrollments from a given sponsor in the Enrollment Report, use the **Sponsors** filter to select the sponsor(s) you're interested in. If you don't select any values in a filter, all data from that filter is included in the results.
 - **Copy link to report:** When a report is run, the browser generates a link that represents filter selections for the current report. Select the **clipboard icon** to copy the current report and share it with another Gameboard user. The user whom you are sharing with must have the appropriate Gameboard role and must be logged into Gameboard. You can also copy the link in your browser's address bar and share.
 
 !!! tip
@@ -66,7 +66,7 @@ The screen print below shows a summary of a typical game. The summary shows:
 
 3. 25 different sponsors participated in this example game.
 
-Screen print 3: Sample Enrollment report
+*Screen print 3: Sample Enrollment report*
 
 ![sample enrollment](img/sample-enroll-report.png)
 

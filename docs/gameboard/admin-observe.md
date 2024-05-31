@@ -24,7 +24,7 @@ VM name (*win10-workstation*) and player display name (*Wolverine 3*)  help obse
 
 **Rank:** Sort the consoles by scoreboard rank.
 
-You can move a row to the top and "pin" it there to keep it in place. You can pin multiple rows at the top as well. This is useful when you are interested in following a certain few teams, players, or challenges. This also useful after you have searched---you can pin results at the top where you can reference them frequently.
+You can move a row to the top and "pin" it there to keep it in place. You can pin multiple rows at the top as well. This is useful when you are interested in following a certain few teams, players, or challenges. This is also useful after you have searched--you can pin results at the top where you can reference them frequently.
 
 ![observe-pin](img/observe-pin.png)
 

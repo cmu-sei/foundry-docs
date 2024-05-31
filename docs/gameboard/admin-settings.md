@@ -39,11 +39,11 @@ You arrive at the **Admin Game Settings** by creating a new game or by editing a
 
 **Feedback Questions:** It's possible -- but not required -- to create questions to capture participant feedback on the game and individual challenges. Create your feedback questions here using Yaml. For help with the feedback feature, see the [Feedback Form documentation](admin-feedback-form.md).
 
-**About feedback templates:** 
+**About feedback templates:** This modal provides instructions for configuring questions presented to players after they complete a challenge or game.
 
-**Paste Example Configuration:**
+**Paste Example Configuration:** Pastes sample feedback configuration into the Feedback Questions field for you to modify and use for your own needs.
 
-**Certificate Template:**
+**Certificate Template:** Design a certificate template here by entering HTML into the Certificate Template field. More information on certificates can be found in the [Playing in the Gameboard](participating.md) documentation under "The Profile screen" heading. For your convenience, selecting the **i** button displays instructions for designing a certificate that can dynamically display information related to a game, such as leaderboard rankings, player scores, and other details.
 
 ## Modes
 
@@ -81,9 +81,9 @@ These settings pertain to registration, execution, and general game and challeng
 
 **Allow Reset:** Toggle *Forbidden* or *Allowed* to permit participants to restart their game and attempt challenges again. This option is generally allowed on a "practice" game since that game is meant to help users get their bearings on how a competition works; however, you may decide players will be forbidden to reset an "official" game.
 
-**Allow Late Starts:**
+**Allow Late Starts:** Toggle *Forbidden* or *Allowed* to permit players to start within a session length of the execution period end. When toggled to allow, players whose session would end prematurely due to the execution window closing will be allowed to play; however, their session will be shortened to match the end of the game.
 
-**Allow Public Scoreboard Access:**
+**Allow Public Scoreboard Access:** Toggle *Forbidden* or *Allowed* to permit players to view the complete scoreboard after the game ends. Not that the scoreboard itself is public, but if toggled to forbid, players can't view detailed score information for competing players.
 
 ### Registration
 
@@ -101,17 +101,13 @@ Offering a different execution period from registration period is an option. Thi
 
 ## Challenges
 
-**Search:**  Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo.
+### Search
 
-**Edit:** Selecting a challenge from the search results adds it to the Edit icon.
+Search for challenges on TopoMojo to place in the game. *Search* here is limited by *Audience* on the workspace Settings in TopoMojo.
 
-**Map:** Here is where the visual representation of the game is arranged.  Challenges are placed on the game map here. The challenges you selected appear as hotspots on the map. Drag them into position on the map.
+### Edit
 
-**Show Grid:** Each map has a grid. By selecting Show Grid, you can toggle displaying the grid. When enabled, the grid overlays the map image and makes it easier for you place your challenge hotspots. 
-
-**Browse:** Select **Browse** to search for an image that will serve as a backdrop to your map.
-
-**Reset:** Removes the image from your map. Reset does not remove challenge hotspots. 
+Selecting a challenge from the search results adds it to the Edit icon.
 
 #### Challenge Specs
 
@@ -121,13 +117,11 @@ Offering a different execution period from registration period is an option. Thi
 
 **Points:** Assign a point value to your challenge here.
 
-**Solution Guide URL:** 
+**Solution Guide URL:** Add links to challenge solution guides here for *practice mode* challenges. When added here, the link to the solution guide is available to players in the challenge instructions. Enabling **Show Solution Guide in Competitive Mode** permits the link to a solution guide to be available to players in a *competitive* game.
 
-**Disabled:** Check to disable this challenge in the game without deleting it.
+**Disabled:** Check to disable this challenge in the game without removing it. Disabled challenges are unavailable to players, don't count toward scores, and are not deployed when an admin initiates deployment on a player’s behalf. Essentially, disabling a challenge removes the spec from the game without deleting any underlying data.
 
-**Show Solution Guide in Competitive Mode:**
-
-**Hidden:**
+**Hidden:** Hidden challenges can't be manually deployed by players and don't count toward scores. However, they are deployed when an admin initiates deployment on a player's behalf or if the game configured in External mode. The need for a hidden challenge is typically related to the implementation details of an externally hosted game and is not useful for the vast majority of games.
 
 **Remove This Challenge:** Removes the challenge from the game.
 
@@ -137,6 +131,18 @@ Prerequisites are for challenges that unlock other challenges. For example: Your
 
 ##### Automatic Bonuses
 
-**Paste this example configuration:**
+Gameboard can automatically award bonus points to teams and players based on the order in which they solve a challenge. For instance, the first team to solve a challenge can earn an extra 100 points, the second team 50 points, and so on. To configure this, use the YAML format specified below.
 
-**Import this configuration:**
+**Paste this example configuration:** Click to paste the "hint" text contained in the textbox. This is a useful starting point for creating your own bonus structure YAML configuration.
+
+**Import this configuration:** When you have finished editing your YAML, click to commit it to Gameboard.
+
+### Map
+
+Here is where the visual representation of the game is arranged.  Challenges are placed on the game map here. The challenges you selected appear as hotspots on the map. Drag them into position on the map.
+
+**Show Grid:** Each map has a grid. By selecting Show Grid, you can toggle displaying the grid. When enabled, the grid overlays the map image and makes it easier for you place your challenge hotspots. 
+
+**Browse:** Select **Browse** to search for an image that will serve as a backdrop to your map.
+
+**Reset:** Removes the image from your map. Reset does not remove challenge hotspots.

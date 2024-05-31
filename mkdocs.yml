@@ -83,7 +83,7 @@ nav:
     - Settings: gameboard/admin-settings.md
     - Feedback form: gameboard/admin-feedback-form.md
     - Completion Certificates: gameboard/completion-certificates.md
-    - Clone, yaml, json, Delete: gameboard/admin-clone-yaml-json.md
+    - Clone, yaml, and json options: gameboard/admin-clone-yaml-json.md
 - Cubespace Instructor Guide:
   - Cubespace Getting Started: cubespace-instructor/0-ins-getting-started.md
   - The Dauntless Manual: cubespace-instructor/ins-dauntless-manual.md
