@@ -4,9 +4,9 @@ The **Templates** tab is where you can view all of the templates that exist in T
 
 **Search:** Search for templates by workspace. Notice that you can apply filters here to further narrow down your search. In the screen print below, the filter is for linked VMs with a parent template of a VM called `kali-201901`.
 
-![templates filter](/docs/topomojo/img/templates-filter.png)
+![templates filter](img/templates-filter.png)
 
-You can filter for specific workspaces here too. Clicking the *name* of the of the workspace takes you directly to the workspace. In the screen print below, 
+You can filter for specific workspaces here too. Clicking the *name* of the of the workspace takes you directly to the workspace.
 
 !!! note "Linked and unlinked templates"
 
@@ -26,7 +26,7 @@ TopoMojo does not append the isolation tag to persistent/shared networks listed 
 
 For more information on *isolation tags*, see "Isolation tags" in [TopoMojo concepts](index.md).
 
-**Guest Settings:**
+**Guest Settings:** List key value pairs in the form of `key=value` to pass data into deployed VMs via VMware guestinfo Variables. The **Guest Settings** field uses VMware Guest Info Variables to inject content into virtual machines. Key/value pairs are placed here. The *key* is the name of the guest variable you want to define, and the *value* is value, information, setting, of the variable.  For example, `var1=test` is a guest setting named “var1” with a value of “test”.
 
 **Replicas:** *Replicas* indicates how many copies of the VM get deployed in a gamespace. This will vary according to your needs. You may need two copies of the VM per gamespace or you may need 10. E.g.: two users are working a Topo lab together; we want to set Replicas to `2` to ensure that each user has their own VM to work with. If set to `1`, then the two users could encroach on each other's work on the single VM.
 

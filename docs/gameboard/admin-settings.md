@@ -69,7 +69,7 @@ These settings pertain to registration, execution, and general game and challeng
 
 **Closes:** The date and the time that your game ends.
 
-**Session Duration:** The duration of game session in minutes.
+**Session Duration:** The duration of game session in minutes. Games are created with a default session time of 60 minutes.
 
 **Session Limit:** The maximum number of sessions -- a session is when a game is started and challenges can be deployed and solved -- per game.
 

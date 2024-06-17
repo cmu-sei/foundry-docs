@@ -25,7 +25,7 @@ Use the `Pod__Vlan__Reservations` environment variable to define the name of a p
 - `Pod__Vlan__Reservations__0__Id:` defines the vlan Id (from the hypervisor) that corresponds to the shared/persistent network. 
 - `Pod__Vlan__Reservations__0__Name:` defines the name of the persistent/shared network. 
 
-More than one shared/persistent network can be defined by incrementing the variable name (`Pod__Vlan__Reservations__1__Id` and `Pod__Vlan__Reservations__1__Name`. To connect VMs to shared/persistent networks, users must have at least **Builder** permissions. 
+More than one shared/persistent network can be defined by incrementing the variable name (`Pod__Vlan__Reservations__1__Id` and `Pod__Vlan__Reservations__1__Name`). To connect VMs to shared/persistent networks, users must have at least **Builder** permissions. 
 
 !!! note "A note about bridge-net"
 

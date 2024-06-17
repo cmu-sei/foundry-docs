@@ -1,6 +1,6 @@
 # Challenge tab
 
-The *Challenge* tab in the Topo workspace is used when both Gameboard and TopoMojo are integrated to execute a cyber competition. More information on linking those two applications together can be found elsewhere in the Foundry documentation. The Challenge tab is where you create random key/values, embed them in a *gamespace* at deploy time, and ask questionsand answers of competitors (players).
+The *Challenge* tab in the Topo workspace is used when both Gameboard and TopoMojo are integrated to execute a cyber competition. More information on linking those two applications together can be found elsewhere in the Foundry documentation. The Challenge tab is where you create random key/values, embed them in a *gamespace* at deploy time, and ask questions and answers of competitors (players).
 
 ## Transforms
 
@@ -36,7 +36,9 @@ A *variant* describes a different version of a challenge. Variants can contain d
 
 **Question:** Enter the question you expect the participant to answer here. Your question should be specific, so that there is only one correct answer.
 
-**Answer:** Enter the correct answer that the competitor must submit to to earn a score.
+**Answer:** Enter the correct answer that the competitor must submit to earn a score.
+
+These options are revealed when **Detail** is selected.
 
 **Hidden:** Select **Hidden** to prevent the question from appearing when playing the challenge. Hidden questions do not appear when playing in TopoMojo or via Gameboard.
 

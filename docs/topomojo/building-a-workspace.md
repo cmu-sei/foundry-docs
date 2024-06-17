@@ -1,6 +1,6 @@
 # Building a new workspace
 
-The workspace interface contains six tabs: Settings, Templates,  Document, Challenge, Files, and Play. To build a new Topo workspace click **Home**, the **New Workspace**.
+The workspace interface contains six tabs: Settings, Templates,  Document, Challenge, Files, and Play. To build a new Topo workspace click **Home**, then **New Workspace**.
 
 ## Settings
 
