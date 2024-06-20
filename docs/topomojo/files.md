@@ -20,4 +20,4 @@ When the **Local** filter is removed, *all* of the ISOs in the global folder on 
 
 ISOs can be attached to a VM in the challenge workspace **Templates** tab. See "Adding and editing templates" in the [Building a new Workspace](building-a-workspace.md) chapter of this guide. When an ISO is selected here, the ISO will be attached to the VM upon its deployment.
 
-ISOs can also be attached to VM in the workspace **Challenge** tab **Variant Detail**. This is called "dynamic ISO attachment" and gives you the ability to attach a variant-specific ISO file to a template. You *must* specify a target(s) here. See also "Variants" in the [Challenge tab](challenge.md) chapter of this guide.
+ISOs can also be attached to a VM by using the workspace **Challenge** tab's **Variant Detail** function. This is called "dynamic ISO attachment" and gives you the ability to attach a variant-specific ISO file to a template. You *must* specify a target(s) here. See also "Variants" in the [Challenge tab](challenge.md) chapter of this guide.
