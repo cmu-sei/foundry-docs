@@ -18,6 +18,6 @@ When you upload an ISO file in the box, TopoMojo creates a folder with *this* GU
 
 When the **Local** filter is removed, *all* of the ISOs in the global folder on the NFS data store can be seen. (The folder name will contain a GUID of all zeros.) These global ISOs are available to every workspace in TopoMojo.
 
-ISOs can be attached to a VM in the workspace, **Templates** tab, **Settings**. See "Adding and editing templates" in the [Building a new Workspace](building-a-workspace.md) chapter of this guide. When an ISO is selected here, the ISO will be attached to the VM upon its deployment.
+ISOs can be attached to a VM in the challenge workspace **Templates** tab. See "Adding and editing templates" in the [Building a new Workspace](building-a-workspace.md) chapter of this guide. When an ISO is selected here, the ISO will be attached to the VM upon its deployment.
 
-ISOs can also be attached to VM in the workspace, **Challenge** tab, **Variant Detail**. This is called "dynamic ISO attachment" and gives you the ability to attach a variant-specific ISO file to a template. You *must* specify a target(s) here. See also "Variants" in the [Challenge tab](challenge.md) chapter of this guide.
+ISOs can also be attached to VM in the workspace **Challenge** tab **Variant Detail**. This is called "dynamic ISO attachment" and gives you the ability to attach a variant-specific ISO file to a template. You *must* specify a target(s) here. See also "Variants" in the [Challenge tab](challenge.md) chapter of this guide.

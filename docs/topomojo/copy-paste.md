@@ -2,14 +2,14 @@
 
 The procedures below show you how to:
 
-- Copy text from a local machine (an *out-of-game* computer) and paste it into an in-game virtual machine
+- Copy text from a local machine (an *out of game* computer) and paste it into an *in game* virtual machine
 - Copy text from a virtual machine and paste it into a local machine
 
 *The VM console cog icon:*
 
 ![console-cog](img/console-cog.png)
 
-## From local ("out of game") to in-game  
+## From local ("out of game") to "in game"  
 
 1. On your local machine select, then copy, the content you want to place into a launched virtual machine.
 2. In the VM console tab, select the cog icon (the **Tools**). Under **Clipboard** paste in the clip using right-click Paste or `ctrl+V`. 
