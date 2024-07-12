@@ -98,6 +98,7 @@ The **Site Usage** report answers questions like these:
 2. How many sponsors had active players and how many players represented each?
 3. How many players are competitive players versus how many players are practice-only players?
 4. How many unique challenges versus how many total challenges were attempted in a given period of time?
+5. How many hours were spent playing games?
 
 ## Support Report
 
