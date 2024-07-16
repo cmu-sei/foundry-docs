@@ -151,3 +151,21 @@ Here is where the visual representation of the game is arranged.  Challenges are
 **Browse:** Select **Browse** to search for an image that will serve as a backdrop to your map.
 
 **Reset:** Removes the image from your map. Reset does not remove challenge hotspots.
+
+## Teams/Players tab
+
+The **Teams/Players** tab contains the list of game players. If the game is a *team* game, then you will see the Teams tab. If the game is an *individual* game then you will see the Players tab. Select **Use legacy player list** to view the player list in traditional mode (as if you navigated to **Games**, then hovered over a game card and selected **Players**). 
+
+Here you can search, see who advanced to the next game and who did not, who started, who is currently playing, who finished, and sort by rank, name, and time remaining.
+
+## Observe tab
+
+The observation functionality found here is the same observe capability documented here: [Observe Mode](admin-observe.md).
+
+## Tickets tab
+
+The support ticketing functionality found here is the same as the interface documented here: [Using the Integrated Support feature](support.md). However, the support tickets are constrained to the game you viewing. You can perform all of the usual support ticket actions here (filter, search, export tickets) except for creating a new ticket.
+
+## Scoreboard tab
+
+The scoreboard found here is the same scoreboard you would find if you clicked the Scoreboard link in a game lobby.
