@@ -13,6 +13,7 @@ Gamespaces in the table show the gamespace id or support code in Gameboard (e.g.
 ## View (expanded)
 
 **View:** Selecting **View** expands the gamespace information where a list of all the VMs associated with the gamespace and their state. Additional information on how the View works is found below.
+
 - **refresh:** Refreshes the VM instance.
 - **console:** Allows you to interact with the VM (a user's gamespace).
 - **stop:** Stops a powered on VM.
