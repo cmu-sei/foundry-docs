@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 # Challenge tab
 
 The *Challenge* tab in the Topo workspace is used when both Gameboard and TopoMojo are integrated to execute a cyber competition. More information on linking those two applications together can be found elsewhere in the Foundry documentation. The Challenge tab is where you create random key/values, embed them in a *gamespace* at deploy time, and ask questions and answers of competitors (players).

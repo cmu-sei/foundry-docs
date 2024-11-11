@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 The **Play** page is where you can interact with your lab in the same way others will when they launch your content or "play" through your challenge. Play deploys a read-only copy of all virtual machines in the workspace; this gives the player their own deployed configurations.
 
 **Variant:** Specify which variant of the challenge you wish to play (if it is a *variant* challenge).

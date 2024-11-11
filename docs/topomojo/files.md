@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 The **Files** page in the Topo workspace allows you to upload files from your system to TopoMojo to include in your lab. These files are used as ISOs that can be attached to VMs in the workspace. If your files aren’t already in an ISO file format, TopoMojo wraps them in an ISO after upload.
 
 !!! note

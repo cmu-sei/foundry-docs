@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current Gameboard documentation [here](https://cmu-sei.github.io/crucible/gameboard/).</strong>
 You must have the Admin Role to get to the Players screen in a game. Assuming you have been granted the appropriate role in the Gameboard, select **Admin**. Hover your mouse over an active game, then click **Players**.
 
 **Search:** The Search feature is relative to the screen you are viewing when performing the search. You can apply the following filters to your search results and take action(s).
