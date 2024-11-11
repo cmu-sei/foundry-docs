@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current Gameboard documentation [here](https://cmu-sei.github.io/crucible/gameboard/).</strong>
 # Using the Integrated Support feature
 
 The gameboard platform comes with a built-in customer support interface so that competition hosts and administrators can assist competitors and players. This way, Gameboard is a "one-stop shop" and no outside apps or systems are required to track and measure issues reported by participants.

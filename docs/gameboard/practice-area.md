@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current Gameboard documentation [here](https://cmu-sei.github.io/crucible/gameboard/).</strong>
 # Practice Area
 
 The **Practice Area** is where Gameboard players can go to rehearse challenges (labs) to become proficient in certain skills. Practice Area is a lightweight version of a formal competition. After logging into Gameboard, click **Practice** in the main navigation.

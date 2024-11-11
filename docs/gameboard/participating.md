@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current Gameboard documentation [here](https://cmu-sei.github.io/crucible/gameboard/).</strong>
 # Participating in a Game
 
 This topic describes the Gameboard from a participant's point-of-view. A *participant* is a player in a game or a competitor in a competition who has no special role(s) attached them. These instructions assume that a fully configured game environment is available to the reader and they have an account on the Identity server.

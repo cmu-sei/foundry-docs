@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 # Admin Workspaces
 
 The **Workspaces** tab is where the admin can search for workspaces and perform limited actions. Workspaces are where challenges (or labs) are built. Here, an admin can view every workspace.

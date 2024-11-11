@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 # TopoMojo Docs
 
 This documentation introduces users to the TopoMojo environment and provides information necessary to launch existing labs and create new topologies.

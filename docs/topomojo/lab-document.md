@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current TopoMojo documentation [here](https://cmu-sei.github.io/crucible/topomojo/).</strong>
 # Lab Document
 
 The **Document** tab in a Topo workspace is where you write the instructions that correspond with your lab. Instructions are authored in Markdown using Topo's built-in editor. Authoring in Markdown enables you to create a nicely formatted document without writing HTML. 

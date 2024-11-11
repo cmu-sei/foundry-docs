@@ -1,3 +1,6 @@
+!!! Warning "" 
+
+	 :warning: <strong>This documentation site has been deprecated and will no longer be updated as of 11/11/24. Foundry applications are now part of the [Crucible Framework](https://cmu-sei.github.io/crucible/). Please find current Gameboard documentation [here](https://cmu-sei.github.io/crucible/gameboard/).</strong>
 # Gameboard Roles
 
 The following is a list of roles in the gameboard. Note that these roles aren't additive -- they are independent. Therefore, each role has to be added individually and a single user can have multiple roles. Each assigned role only grants the privileges for that role. Roles do not inherit permissions from other roles.
